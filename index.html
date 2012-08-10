@@ -1,20 +1,41 @@
 
 <html>
 <head>
+    
     <title>Asq.Us - Democracy Made Simple</title>
+    
+    <!-- META Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap-responsive.min.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="css/main.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/site.css" media="screen" rel="stylesheet" type="text/css">
+        <!-- it's important that responsive is after main -->
+    <link href="css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- JS -->
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/underscore.js"></script>
     <script type="text/javascript" src="js/backbone.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
 
+    <!-- View Templates -->
+
     <!-- HOME -->
-    <script type="text/template" id="home"><div>
-        <h1>Home</h1>
+    <script type="text/template" id="home">
+
+    <div id="intro-pane">
+        <div class="container" id="intro">
+            <h1 align="center">Intro Graphic</h1>
+        </div>
     </div>
+    <div id="main-pane">
+        <div class="container" id="main">
+            
+        </div>
+    </div>
+
     </script>
 
     <!-- FAQ -->
@@ -24,8 +45,11 @@
     </script>
 
     <!-- TEAM -->
-    <script type="text/template" id="team"><div>
-        <h1>Team</h1>
+    <script type="text/template" id="team">
+    <div id="main-pane">
+        <div class="container" id="main">
+        <h1>Team</h1>        
+        </div>
     </div>
     </script>
  
@@ -44,6 +68,7 @@
     <!-- CONTACTS -->
     <script type="text/template" id="contact"><div>
         <h1>Contact</h1>
+        <p>Want to chat? <a href="mailto:hello@asq.us" target="_blank">hello@asq.us</a>
     </div>
     </script>
 
@@ -51,45 +76,88 @@
 
 </head>
 <body>
-<script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function() { 
             $('.dropdown-toggle').dropdown()
             console.log("success")
         });
     </script>
 
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-    
-        <a class="brand" href="#"><img src="img/logo.png"></img></a>
-        <ul class="nav pull-left">
-            <p class="navbar-text">Democracy Made Simple</p>
-        </ul>
-        <ul class="nav pull-right">
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-                <a href="#"
-                    class="dropdown-toggle"
-                    data-toggle="dropdown">About<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#vision">Vision</a></li>
-                    <li><a href="#principles">Principles/Mantra/Dogma</a></li>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+            </a>
+            <a class="brand" href="#"><img src="img/logo.png"></img></a>
+            <ul class="nav pull-left">
+                <p class="navbar-text">Democracy Made Simple</p>
+            </ul>
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown">About<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#vision">Vision</a></li>
+                            <li><a href="#principles">Principles/Mantra/Dogma</a></li>
+                        </ul>
+                    </li>
+                    <li class="pull-right"><a href="#contact">Contact</a></li>
+                    <li class="pull-right"><a href="#signup">Sign Up</a></li>
                 </ul>
-            </li>
-            <li class="pull-right"><a href="#contact">Contact</a></li>
-            <li class="pull-right"><a href="#signup">Sign Up</a></li>
-        </ul>
-        
+            </div>
+            
+            </div>
         </div>
     </div>
-</div>
-<div class="container">
     <div id="content">
         <h1>BACKBONE.js BROKEN</h1>
     </div>
-</div>
+    <div id="footer-pane">
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="span1 offset3">
+                    <h3>About</h3>
+                    <ul class="unstyled">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#principles">Principles</a></li>
+                        <li><a href="#jobs">Jobs</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="span1 offset1">
+                    <h3>Policies</h3>
+                    <ul class="unstyled">
+                        <li><a href="#transparency">Transparency</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#security">Security</a></li>
+                        <li><a href="#terms">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="span1 offset1">
+                    <h3>Elsewhere</h3>
+                    <ul class="unstyled">
+                        <li><a href="http://twitter.com/AsqUs">Twitter</a></li>
+                        <li><a href="http://facebook.com/AsqUsOrg">Facebook</a></li>
+                        <li><a href="http://github.com/AsqUs">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <h6 align="center">© 2012 Asq.Us - ALL RIGHTS RESERVED.</h6>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
