@@ -22,6 +22,18 @@ window.TeamView = Backbone.View.extend({
 
     template:_.template($('#team').html()),
     
+    events: {
+        "click .person": "team_member"
+    },
+
+    team_member: function(e){
+        console.log("chyea");
+        console.log(e.currentTarget.hash);
+        e.preventDefault();
+        window.history.pushState()
+        $(window).scrollTop($(e.currentTarget.hash).offset().top);
+    },
+    
     render:function (e) {
         $(this.el).html(this.template());
         return this;
