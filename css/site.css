@@ -32,7 +32,7 @@ ul, ol, li {
     border-bottom: 1px solid lightgrey;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 90px;
+    padding-bottom: 115px;
 }
 
 #team-icons {
@@ -84,13 +84,27 @@ a.person:hover .small-bio:after {
   left:1em;
 }
 
+#asq-force-pic {
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 796px;
+    height: 482px;
+    background-image: url("../img/asq_force.jpg");
+
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
 
 .small-bio {
     display: none;
 }
 
-.pane p {
+.pane p,li{
     padding-top: 10px;
+    font-size: 17px;
 }
 
 .pane {
@@ -98,6 +112,11 @@ a.person:hover .small-bio:after {
     margin-right: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.container hr {
+    margin: 18px 100px;
+    border-top: 1px solid black;
 }
 
 .member img {
@@ -132,19 +151,24 @@ a.person:hover .small-bio:after {
 #main-pane {
     width: 100%;
 }
+/* 
 #main {
     -webkit-box-shadow: 2px 2px 20px 1px #010101;
     box-shadow: 2px 2px 20px 1px #010101;
     background-color: white;
     padding-bottom: 100px;
 }
+*/
 #footer-pane {
-    height: 360px;
     width: 100%;
     background-color: #012345;
+    position: relative;
+    margin-top: -10px;
+    z-index: 40;
 }
 #footer {
     padding-top: 50px;
+    padding-left: 10px;
 }
 #footer h3 {
     color: #FF8700;
@@ -160,3 +184,250 @@ a.person:hover .small-bio:after {
     padding-top: 25px;
     font-weight: normal;
 }
+
+
+/* Front page stuff */
+#front-nav {
+    margin-left: auto;
+    margin-right: auto:
+}
+#front-nav h1 {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-inner {
+  background-color: #012345; /* background color will be black for all browsers */
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+
+
+#headerIntro {
+  height: 360px;
+  background-image: url('../img/constitution_fade.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  border-bottom: solid #FFFFFF 2px;
+}
+
+.askQuestion{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.answerQuestion{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.communityView{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.leftText{
+  width: 450px;
+  float: left;
+  margin: 45px 15px 6px;
+}
+
+.rightText{
+  position: relative;
+  width: 450px;
+  float: right;
+  margin: 15px 15px 6px;
+}
+
+.leftText h1{
+//  font-size: 50px;
+//  line-height: 1.1;
+  text-shadow:
+      0 0 1em #FFF,
+      0 0 1em #FFF,
+      0 0 1em #FFF,
+      0 0 1em #FFF;
+  font-size: 45px;
+  line-height: 55px;
+  color: #012345;
+
+}
+
+.rightText h1{
+//  font-size: 50px;
+//  line-height: 1.1;
+  text-shadow:
+      0 0 1em #FFF,
+      0 0 1em #FFF,
+      0 0 1em #FFF,
+      0 0 1em #FFF;
+  font-size: 45px;
+  line-height: 55px;
+  color: #012345;
+}
+.fb-quiz {
+  position: relative;
+  float: left;
+  height: 258px;
+  width: 400px;
+  background-image: url('../img/fb-amash.png');
+  margin-top: 40px;
+
+}
+.rightImage {
+  position: relative;
+  float: left;
+  height: 379px;
+  width: 306px;
+  margin-top: 20px;
+}
+.rightImage .front {
+  position: absolute;
+  z-index: 20;
+  left: 120px;
+  background-image: url('../img/letter_to_mayor_tilt.png');
+  height: 379px;
+  width: 306px;
+}
+.rightImage .front:hover {
+
+  -moz-transform: scale(1) rotate(25deg) translateX(150px) translateY(20px) skewX(10deg) skewY(10deg);
+  -webkit-transform: scale(1) rotate(25deg) translateX(150px) translateY(20px) skewX(10deg) skewY(10deg);
+  -o-transform: scale(1) rotate(25deg) translateX(150px) translateY(20px) skewX(10deg) skewY(10deg);
+  -ms-transform: scale(1) rotate(25deg) translateX(150px) translateY(20px) skewX(10deg) skewY(10deg);
+  transform: scale(1) rotate(25deg) translateX(150px) translateY(20px) skewX(10deg) skewY(10deg);
+}
+.rightImage:hover .front{
+
+  -moz-transform: scale(1) rotate(25deg) translateX(150px) translateY(20px) skewX(10deg) skewY(10deg);
+  -webkit-transform: scale(1) rotate(25deg) translateX(150px) translateY(20px) skewX(10deg) skewY(10deg);
+  -o-transform: scale(1) rotate(25deg) translateX(150px) translateY(20px) skewX(10deg) skewY(10deg);
+  -ms-transform: scale(1) rotate(25deg) translateX(150px) translateY(20px) skewX(10deg) skewY(10deg);
+  transform: scale(1) rotate(25deg) translateX(150px) translateY(20px) skewX(10deg) skewY(10deg);
+}
+
+
+
+.rightImage .back {
+  position: absolute;
+  z-index: 10;
+  background-image: url('../img/letter_to_mayor_tweet.png');
+  height: 379px;
+  width: 306px;
+}
+.iphone-display {
+  position: relative;
+  z-index: 20;
+  background-image: url('../img/iphone_container.png');
+  height: 654px;
+  width: 363px;
+  float: left;
+}
+
+.front_pane {
+  height: 400px;
+  margin: 20px 0 45px;
+}
+
+#main {
+  z-index: 10;
+  position: relative;
+  background-image: url("../img/natural_paper.png");
+  //Shadow
+  -webkit-box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
+  box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
+  //Corners
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  min-height: 100%;
+  padding-bottom: 100px;
+  
+}
+
+.intro_container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#introPane {
+  
+}
+
+#introOverlay {
+  float: left;
+  height: 400px;
+  width: 450px;
+  position: relative;
+}
+
+.introTitle {
+  position: absolute;
+  float: right;
+  margin-top: 40px;
+  margin-left: 500px;
+  text-shadow: 0 0 1em #FFF, 0 0 1em #FFF, 0 0 1em #FFF;
+}
+
+  .introTitle h1 {
+    text-shadow:
+      0 0 1em #FFF,
+      0 0 1em #FFF,
+      0 0 1em #FFF,
+      0 0 1em #FFF;
+    font-size: 60px;
+    line-height: 66px;
+  }
+
+  .introTitle h1, .introTitle h2 {
+    color: #012345;
+  }
+
+
+#tablet {
+  width: 450px;
+  height: 576px;
+  position: fixed;
+  top: 100px;
+  background: url("../img/ipad.png") 0 0 no-repeat;
+}
+
+.speech_bubble {
+  position: absolute;
+  top: 0; left: 0;
+  background-image: url(../img/speech_bubble_sprite_small.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 61px;
+  width: 70px;
+  cursor: pointer;
+}
+
+  .speech_bubble.from_right {
+    background-position: 0 0;
+  }
+  
+  .speech_bubble.from_right.hl {
+    background-position: -141px 0;
+  }
+
+  .speech_bubble.from_right.hl_temp {
+    background-position: -141px 0;
+  }
+
+  .speech_bubble.from_left {
+    background-position: -70px 0;
+  }
+
+  .speech_bubble.from_left.hl {
+    background-position: -212px 0;
+  }
+
+  .speech_bubble.from_left.hl_temp {
+    background-position: -212px 0;
+  }
+
