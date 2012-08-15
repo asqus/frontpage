@@ -25,16 +25,98 @@
     <!-- HOME -->
     <script type="text/template" id="home">
 
-    <div id="intro-pane">
-        <div class="container" id="intro">
-            <h1 align="center">Intro Graphic</h1>
+<div id="headerIntro">
+<div class="container">
+<div class="row" id="introPane">
+
+<div class="intro_container">
+  <div id="introOverlay">
+    <div  id="tablet">
+        <div class="speech_bubble hl_temp from_right" style="left:200px; top:140px"></div>
+        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:100px; top:100px"></div>
+        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:140px; top:160px"></div>
+        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:305px; top:80px"></div>
+        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:270px; top:210px"></div>
+    </div>
+  </div>
+
+  <div class="introTitle">
+    <h1>Let your voice</h1>
+    <h1>be heard.</h1>
+    <h2>Connect with your elected officials</h2>
+    <h2>like never before.</h2>
+    <br>
+    <a href="#signup">
+    <img src="img/link_to_email.png"  />
+    </a>
+    <div onclick="location.href='#signup';" style="cursor:pointer; visibility:hidden;" class="input-append sendToEmail">
+        <input size="16" type="text" disabled="disabled">
+        <button class="btn btn-success" type="button">Join!</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container" id="main">
+<div class="row span12">
+    <!-- 
+    <div class="row">
+        <div id="front-nav">
+            <h1><a href="#ask">Question</a></h1>
+            <h1><a href="#answer">Respond</a></h1>
+            <h1><a href="#community">Discover</a></h1>
         </div>
     </div>
-    <div id="main-pane">
-        <div class="container" id="main">
-            
+    <hr>
+    -->
+    <div class="row">
+        <div class="front_pane" id="ask">
+            <div class="askQuestion">
+              <div class="leftText">
+                <h1>Ask your elected officals about issues that are important to you.</h1>
+              </div>
+              <div class="rightImage">
+                <div class="front">
+                </div>
+                <div class="back">
+                </div>
+              </div>
+            </div>
         </div>
     </div>
+    <hr>
+    <div class="row">
+        <div class="front_pane" id="answer">
+            <div class="answerQuestion">
+              <div class="fb-quiz">
+              </div>
+              <div class="rightText">
+                <h1>Answer questions directly from your representatives and have your voice heard.</h1>
+              </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="front_pane" id="community">
+            <div class="communityView">
+              <div class="leftText">
+                <h1>Discover and explore the issues that matter most within your community.</h1>
+              </div>
+              <div class="iphone-display" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="front_pane" id="signup">
+        </div>
+    </div>
+
+</div>
+</div>
+
 
     </script>
 
@@ -395,7 +477,7 @@ We anticipate maintaining the platform with a small amount of full-time employee
                         </ul>
                     </li>
                     <li class="pull-right"><a href="#contact">Contact</a></li>
-                    <li class="pull-right"><a href="#signup">Sign Up</a></li>
+                    <li class="pull-right"><a href="http://launch.asq.us">Sign Up</a></li>
                 </ul>
             </div>
             

@@ -1,7 +1,15 @@
 window.HomeView = Backbone.View.extend({
     
     template:_.template($('#home').html()),
-    
+
+    events: {
+        "hover #introOverlay" : "hideBubbles"
+    },
+
+    hideBubbles: function() {
+        $(".bubble_fade").fadeToggle(600);
+    },
+
     render:function (e) {
         $(this.el).html(this.template());
         return this;
