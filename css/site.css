@@ -2,6 +2,12 @@
 *  Asq.Us version 1.0
 */
 
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+
 body {
 
     padding-top: 48px;
