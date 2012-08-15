@@ -1,554 +1,1084 @@
+    <html>
 
-<html>
-<head>
-    
-    <title>Asq.Us - Modernizing Democracy</title>
-    
-    <!-- META Tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        
+        <title>Asq.Us - Modernizing Democracy</title>
+        
+        <!-- META Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="css/site.css" media="screen" rel="stylesheet" type="text/css">
-        <!-- it's important that responsive is after main -->
-    <link href="css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css">
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/site.css" media="screen" rel="stylesheet" type="text/css">
+            <!-- it's important that responsive is after main -->
+        <link href="css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css">
 
-    <!-- JS -->
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/underscore.js"></script>
-    <script type="text/javascript" src="js/backbone.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+        <!-- JS -->
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/underscore.js"></script>
+        <script type="text/javascript" src="js/backbone.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
 
-    <!-- View Templates -->
+        <!-- View Templates -->
 
-    <!-- HOME -->
-    <script type="text/template" id="home">
+        <!-- HOME -->
+        <script type="text/template" id="home">
 
-<div id="headerIntro">
-<div class="container">
-<div class="row" id="introPane">
+    <div id="headerIntro">
+    <div class="container">
+    <div class="row" id="introPane">
 
-<div class="intro_container">
-  <div id="introOverlay">
-    <div  id="tablet">
-        <div class="speech_bubble hl_temp from_right" style="left:200px; top:140px"></div>
-        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:100px; top:100px"></div>
-        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:140px; top:160px"></div>
-        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:305px; top:80px"></div>
-        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:270px; top:210px"></div>
-    </div>
-  </div>
-
-  <div class="introTitle">
-    <h1>Let your voice</h1>
-    <h1>be heard.</h1>
-    <h2>Connect with your elected officials</h2>
-    <h2>like never before.</h2>
-    <br>
-    <a href="#signup">
-    <img src="img/link_to_email.png"  />
-    </a>
-    <div onclick="location.href='#signup';" style="cursor:pointer; visibility:hidden;" class="input-append sendToEmail">
-        <input size="16" type="text" disabled="disabled">
-        <button class="btn btn-success" type="button">Join!</button>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="container" id="main">
-<div class="row span12">
-    <!-- 
-    <div class="row">
-        <div id="front-nav">
-            <h1><a href="#ask">Question</a></h1>
-            <h1><a href="#answer">Respond</a></h1>
-            <h1><a href="#community">Discover</a></h1>
+    <div class="intro_container">
+      <div id="introOverlay">
+        <div  id="tablet">
+            <div class="speech_bubble hl_temp from_right" style="left:200px; top:140px"></div>
+            <div class="speech_bubble hl_temp from_right bubble_fade" style="left:100px; top:100px"></div>
+            <div class="speech_bubble hl_temp from_right bubble_fade" style="left:140px; top:160px"></div>
+            <div class="speech_bubble hl_temp from_right bubble_fade" style="left:305px; top:80px"></div>
+            <div class="speech_bubble hl_temp from_right bubble_fade" style="left:270px; top:210px"></div>
         </div>
+      </div>
+
+      <div class="introTitle">
+        <h1>Let your voice</h1>
+        <h1>be heard.</h1>
+        <h2>Connect with your elected officials</h2>
+        <h2>like never before.</h2>
+        <br>
+        <a href="#signup">
+        <img src="img/link_to_email.png"  />
+        </a>
+        <div onclick="location.href='#signup';" style="cursor:pointer; visibility:hidden;" class="input-append sendToEmail">
+            <input size="16" type="text" disabled="disabled">
+            <button class="btn btn-success" type="button">Join!</button>
+        </div>
+      </div>
     </div>
-    <hr>
-    -->
-    <div class="row">
-        <div class="front_pane" id="answer">
-            <div class="answerQuestion">
-              <div class="fb-quiz">
-              </div>
-              <div class="rightText">
-                <h1>Answer questions directly from your representatives and have your voice heard.</h1>
-              </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="container" id="main">
+    <div class="row span12">
+        <!-- 
+        <div class="row">
+            <div id="front-nav">
+                <h1><a href="#ask">Question</a></h1>
+                <h1><a href="#answer">Respond</a></h1>
+                <h1><a href="#community">Discover</a></h1>
             </div>
         </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="front_pane" id="ask">
-            <div class="askQuestion">
-              <div class="leftText">
-                <h1>Ask your elected officals about issues that are important to you.</h1>
-              </div>
-              <div class="rightImage">
-                <div class="front">
+        <hr>
+        -->
+        <div class="row">
+            <div class="front_pane" id="answer">
+                <div class="answerQuestion">
+                  <div class="fb-quiz">
+                  </div>
+                  <div class="rightText">
+                    <h1>Answer questions directly from your representatives and have your voice heard.</h1>
+                  </div>
                 </div>
-                <div class="back">
-                </div>
-              </div>
             </div>
         </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="front_pane" id="community">
-            <div class="communityView">
-              <div class="leftText">
-                <h1>Discover and explore the issues that matter most within your community.</h1>
-              </div>
-              <div class="iphone-display" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="front_pane" id="signup">
-        </div>
-    </div>
-
-</div>
-</div>
-
-
-    </script>
-
-    <!-- FAQ -->
-    <script type="text/template" id="faq">
-    <div id="main-pane">
-        <div class="container faq_page" id="main">
-            <div class="pane">
-                <h1>FAQ</h1>
-                <ul id="bullet-links">
-                    <li><a class="faq-link" href="#faq1">What do you mean by 'publicly-owned'?</a></li>
-                    <li><a class="faq-link" href="#faq2">Why are we using KickStarter to raise funds?</a></li>
-                    <li><a class="faq-link" href="#faq3">How will the project be funded after it's launch?</a></li>
-                    <li><a class="faq-link" href="#faq4">What level of government will be eligible to use the platform?</a></li>
-                    <li><a class="faq-link" href="#faq5">How will you determine who is a representative? How will you prevent abuse?</a></li>
-                    <li><a class="faq-link" href="#faq6">Why is the platform open-source?</a></li>
-                    <li><a class="faq-link" href="#faq7">Are you trying to create 'Direct Democracy'?</a></li>
-                    <li><a class="faq-link" href="#faq8">Why would my representatives use this platform?</a></li>
-                    <li><a class="faq-link" href="#faq9">How will constituents questions be answered? Won't there be too many questions to answer?</a></li>
-                </ul>
-                <p>Don't see your question here? <a href="mailto:hello@asq.us">Email the Asq Force!</a></p>
-            </div>
-            <hr>
-            <div class="pane" id="faq1">
-                <h3>What do you mean by 'publicly-owned'?</h3>
-                <p>AsqUs is being built by a non-profit organization for the people and by the people. We intend to modernize democracy and place this platform in the public domain, being open-source and fully transparent.
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="faq2">
-                <h3>Why are we using KickStarter to raise funds?</h3>
-                <p>We are modernizing democracy by building a dialogue platform that will be a public good. Crowd-based fund-raising is the most consistent approach to this democratic ideal.
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="faq3">
-                <h3>How will the project be funded after it's launch?</h3>
-                <p>We believe an open, issue-based dialogue platform will be a valuable improvement to democracy. As such, we intend to support it in a way similar to Wikipedia - primarily through donations and grants.
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="faq4">
-                <h3>What level of government will be eligible to use this platform?</h3>
-                <p>Any elected official or public representative at any level - city, county, state, and national.
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="faq5">
-                <h3>How will you determine who is a representative? How will you prevent abuse?</h3>
-                <p>Initially, we will contact representatives where we have contacts and connections. We will verify representatives over the phone and again by email.
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="faq6">
-                <h3>Why is the platform open-source?</h3>
-                <p>The platform is all about transparency. The more contributors we get, the better the platform will be. 
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="faq7">
-                <h3>Are you trying to create 'Direct Democracy'?</h3>
-                <p>No. A direct democracy is probably neither feasible nor advisable. Nonetheless, constituents should still be represented. We are creating an easy way for representatives to find out how their constituents feel about issues. It also allows people to ask questions of their constituents.
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="faq8">
-                <h3>Why would my representatives use this platform?</h3>
-                <p>Many representatives currently spend between 5-10% of their budgets on polling. Our platform is free to use. As well, when a representative gets into office, s/he typically only has a small subset of people on their mailing list, and those tend to be of the same party. AsqUs allows them to reach out to people of any political leaning. We will also be aggressively promoting the platform so they don�t have to do that work. Finally, reaching out to constituents is something they ought to be doing; and with a free platform, they won�t have any excuse. 
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="faq9">
-                <h3>How will constituents questions be answered? Won't there be too many questions to answer?</h3>
-                <p>Elected officials and their staff are people too and won't be able to answer every single question that is asked. !!! INSERT COPY ABOUT BUBBLING UP OF QUESTIONS
-                </p>
-            </div>
-        </div>
-    </div>
-    </script>
-
-    <!-- TEAM -->
-    <script type="text/template" id="team">
-    <div id="main-pane">
-        <div class="container team_page" id="main">
-            <div class="pane">
-                <h1>Team</h1>        
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu molestie erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris tempor varius bibendum. Nam rhoncus fringilla lectus sit amet dapibus. Nunc urna elit, ornare porta luctus vel, feugiat eu nunc. Vestibulum non ante vel est porta mollis non et nibh. Proin malesuada ligula sodales lorem laoreet volutpat. Phasellus bibendum posuere risus, quis volutpat neque gravida at. Donec ut augue erat.
-                </p>
-            </div>
-            <div class="icons pane">
-                <ul id="team-icons">
-                    <li>
-                    <a class="person" href="#brad_chick">
-                        <img class="avatar" height="60" width="60" src="img/brad.png">
-                        <div class="small-bio">
-                            <div class="name">Brad Chick</div>
-                            <div class="role">Founder</div>
-                        </div>
-                    </a>
-                    </li>
-                    <li>
-                    <a class="person" href="#adam_williams">
-                        <img class="avatar" height="60" width="60" src="img/adam.png">
-                        <div class="small-bio">
-                            <div class="name">Adam Williams</div>
-                            <div class="role">Founder</div>
-                        </div>
-                    </a>
-                    </li>
-                    <li>
-                    <a class="person" href="#jake_schwartz">
-                        <img class="avatar" height="60" width="60" src="img/jake.png">
-                        <div class="small-bio">
-                            <div class="name">Jake Schwartz</div>
-                            <div class="role">Founder</div>
-                        </div>
-                    </a>
-                    </li>
-                </ul>
-            </div>
-<!-- BRAD -->
-            <div class="member pane" id="brad_chick">
-                <img class="avatar" height="100" width="100" src="img/brad.png">
-                <div class="bio">
-                    <h3>Brad Chick</h3>
-                    <span>Founder</span>
-                    <p>Mauris nulla orci, mattis nec consectetur tempor, consequat et ante. Donec arcu nunc, feugiat vel adipiscing id, adipiscing vitae nisl. Nam placerat quam et enim laoreet pharetra. Donec eu arcu in metus bibendum porta et eu tortor. Nam eleifend faucibus elit id sollicitudin. Cras faucibus ultrices feugiat. Sed diam tortor, auctor ac aliquet nec, pulvinar a justo. Fusce dignissim felis non risus consequat cursus. Suspendisse tincidunt eleifend ligula ut placerat. Curabitur neque dui, tincidunt vitae dignissim vel, cursus ut ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean malesuada turpis eu dui aliquam et interdum neque adipiscing.
-                    </p>
-                    <div class="social">
-                        <a href="http://twitter.com/asqus" class="twitter">AsqUs</a>
+        <hr>
+        <div class="row">
+            <div class="front_pane" id="ask">
+                <div class="askQuestion">
+                  <div class="leftText">
+                    <h1>Ask your elected officals about issues that are important to you.</h1>
+                  </div>
+                  <div class="rightImage">
+                    <div class="front">
                     </div>
-                </div>
-            </div>
-            <hr>
-<!-- ADAM -->
-            <div class="member pane" id="adam_williams">
-                <img class="avatar" height="100" width="100" src="img/adam.png">
-                <div class="bio">
-                    <h3>Adam Williams</h3>
-                    <span>Founder</span>
-                    <p>Mauris nulla orci, mattis nec consectetur tempor, consequat et ante. Donec arcu nunc, feugiat vel adipiscing id, adipiscing vitae nisl. Nam placerat quam et enim laoreet pharetra. Donec eu arcu in metus bibendum porta et eu tortor. Nam eleifend faucibus elit id sollicitudin. Cras faucibus ultrices feugiat. Sed diam tortor, auctor ac aliquet nec, pulvinar a justo. Fusce dignissim felis non risus consequat cursus. Suspendisse tincidunt eleifend ligula ut placerat. Curabitur neque dui, tincidunt vitae dignissim vel, cursus ut ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean malesuada turpis eu dui aliquam et interdum neque adipiscing.
-                    </p>
-                    <div class="social">
-                        <a href="http://twitter.com/asqus" class="twitter">AsqUs</a>
+                    <div class="back">
                     </div>
-                </div>
-            </div>
-            <hr>
-<!-- JAKE -->
-            <div class="member pane" id="jake_schwartz">
-                <img class="avatar" height="100" width="100" src="img/jake.png">
-                <div class="bio">
-                    <h3>Jake Schwartz</h3>
-                    <span>Founder</span>
-                    <p>Mauris nulla orci, mattis nec consectetur tempor, consequat et ante. Donec arcu nunc, feugiat vel adipiscing id, adipiscing vitae nisl. Nam placerat quam et enim laoreet pharetra. Donec eu arcu in metus bibendum porta et eu tortor. Nam eleifend faucibus elit id sollicitudin. Cras faucibus ultrices feugiat. Sed diam tortor, auctor ac aliquet nec, pulvinar a justo. Fusce dignissim felis non risus consequat cursus. Suspendisse tincidunt eleifend ligula ut placerat. Curabitur neque dui, tincidunt vitae dignissim vel, cursus ut ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean malesuada turpis eu dui aliquam et interdum neque adipiscing.
-                    </p>
-                    <div class="social">
-                        <a href="http://twitter.com/asqus" class="twitter">AsqUs</a>
-                    </div>
+                  </div>
                 </div>
             </div>
         </div>
-    </div>
-    </script>
- 
-    <!-- VISION -->
-    <script type="text/template" id="vision">
-    <div id="main-pane">
-        <div class="container vision_page" id="main">
-            <div class="pane">
-                <h1>Vision</h1>
-                <ul id="bullet-links">
-                    <li><a class="vision-link" href="#mission">Mission</a></li>
-                    <li><a class="vision-link" href="#problem">Problem</a></li>
-                    <li><a class="vision-link" href="#solution">Solution</a></li>
-                    <li><a class="vision-link" href="#funding">Funding/Resources</a></li>
-                    <li><a class="vision-link" href="#features">Features</a></li>
-                </ul>
-        <p>
-        People want to be heard. They want to feel like they matter. But within our current political system, people are frustrated because they feel that just isn't happening.
-</p>
-<p>
-What happened to the notion of representation in democracy? When was the last time your representative (at any level) reached out and asked how you felt about some issue?
-</p>
-<p>
-This rarely happens (unless maybe you've written a large check).
-</p>
-<p>
-Asq.Us was founded to tackle this problem. We are putting representation back into democracy.
-</p>
-<p>
-With modern technology, it can't be that difficult to have a meaningful dialogue between representatives and constituents. Democracy can be made much simpler by allowing our representatives to easily guage the opinions of their constituents, and vice versa - allowing constituents to ask questions of their representatives.
-</p>
-<p>
-And this should be a public dialogue. We should see how people feel about issues that affect them. And we should see how our representatives act in the face of that.
-</p>
-<p>
-How are we gonna get there? We're certainly not going to leave this to our politicians. We, the people, need to build this platform.
-</p>
-<p>
-Asq.Us is a publicly-owned political dialogue platform, connecting you to your representatives. We are building it and it will be free to use by any qualifed representative. If we build it, they will come.
-</p>
-
+        <hr>
+        <div class="row">
+            <div class="front_pane" id="community">
+                <div class="communityView">
+                  <div class="leftText">
+                    <h1>Discover and explore the issues that matter most within your community.</h1>
+                  </div>
+                  <div class="iphone-display" />
+                </div>
             </div>
-            <hr>
-            <div class="pane" id="mission">
-                <h3>Mission</h3>
-                <p>To create a political dialogue platform that promotes substantive discource, transparency and accountability.
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="problem">
-                <h3>Problem</h3>
-                <p>
-There is very little, if any, meaningful dialogue between representatives and constituents. People's voices are not heard, and rarely solicited. This leads to disillusionment with the political process and distrust of government.
-                </p>
-                <p>
-Secondly, representatives typically do not have the resources (technical expertise, funding or time) to invest in a sophisticated dialogue platform. Costs associated with current polling options inherently limit usage and voter engagement.
-                </p>
-                <p>
-As well, dialogue driven exclusively from one representative can be seen as ultimately motivated by fundraising desires.
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="solution">
-                <h3>Solution</h3>
-                <p>
-Leveraging modern Internet technology and connectivity, we will build a publicly-funded, free-to-use dialogue platform that will allow representatives to quickly poll their constituents regarding issues. Politicians will be able to consult their constituents, in real-time, on as many issues as they deem important.
-                </p>
-                <p>
-We assume that constituents do want to be solicited, on a regular basis, by their representatives, provided the system is simple and meaningful.
-                </p>
-                <p>
-The platform will be non-invasive - accessing people where they are - online, facebook, on their phones (smart phones, dumb phones, and land lines), providing better statistical accuracy of the results than current polling methods.
-                </p>
-                <p>
-We are asking people to 'have a voice', to be part of the political dialogue. We are not asking them to support any particular representative or cause. Encouraging people to support democracy generally, while being politically neutral, will lead to more participation.
-                </p>
-                <p>
-The system will be completely granular for constituents, allowing them complete control over their level of engagement, having options to participate on local/regional/state/national levels, as well as how frequently they are solicited and even over what types of issues.
-                </p>
-                <p>
-Polls and their results will be filterable by important demographic variables (gender, age, region, etc.) - any variable that the participant wants to expose.
-                </p>
-                <p>
-To guarantee the integrity of the system, it will not be a commercial venture, but must be run by a non-profit and fully-owned by the constituents themselves. We, the people, will offer the system to our representatives and expect them to use it. That is what a democracy is. We expect to be represented.
-                </p>
-                <p>
-Results will be publicly viewable. Votes are tallied anonymously, but you will be able to see how you voted (which is private), how others voted as a group, and ultimately, what your representative did in the face of how the public felt (how s/he voted or did/not support some issue).
-                </p>
-                <p>
-We will also be able to see how frequently a representative leveraged the platform, which will further encourage them to use the platform.
-                </p>
-                <p>
-Each issue be supported by a more in-depth discussion of the issue, involving a summary, the results of polling, community-weighted conversation/comments and official positions of the relevant representatives.
-                </p>
-                <p>
-This deeper discussion can be accessed easily, from links within each initial poll.
-                </p>
-                <p>
-Within a short time, we will have a modern platform for enriched political dialogue.
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="funding">
-                <h3>Funding/Resources</h3>
-                <p>
-Within a short time (~3 years), we expect to be fully funded by the constituents themselves. The platform will be a valuable public resource, similar to Wikipedia, that they will be happy to support with small contributions.
-                </p>
-                <p>
-Before we can get to that level of grass-roots support, we are soliciting grants and donations.
-                </p>
-                <p>
-We anticipate maintaining the platform with a small amount of full-time employees. We also expect larger participation by the open-source community that want to work on meaningful solutions for a better world.
-                </p>
-            </div>
-            <hr>
-            <div class="pane" id="features">
-                <h3>Key Features</h3>
-                <ul>
-                    <li>Free</li>
-                    <li>Easy to use</li>
-                    <li>Benefits to the Representatives</li>
-                    <ul>
-                        <li>Gather important insight</li>
-                        <li>Gain trust</li>
-                        <li>Save both time and money</li>
-                    </ul>
-                    <li>Benefits to the Constituents</li>
-                    <ul>
-                        <li>Voice concern beyond voting</li>
-                        <li>Ability to learn from community</li>
-                        <li>Accessible at leisure</li>
-                    </ul>
-                    <li>Benefits to the Political Process</li>
-                    <ul>
-                        <li>Greater involvment in democracy</li>
-                        <li>More informed constituents</li>
-                        <li>More civilised political discourse</li>
-                        <li>Elected officials less beholden to special interests</li>
-                    </ul>
-                </ul>
-            </div>
-
         </div>
-    </div>
-    </script>
-    
-    <!-- PRINCIPLES -->
-    <script type="text/template" id="principles">
-    <div id="main-pane">
-        <div class="container vision_page" id="main">
-            <div class="pane">
-                <h1>Mantra</h1>
-                <h3>Our guiding principles</h3>
+        <div class="row">
+            <div class="front_pane" id="signup">
             </div>
+        </div>
+
+    </div>
+    </div>
+
+
+        </script>
+
+        <!-- FAQ -->
+        <script type="text/template" id="faq">
+        <div id="main-pane">
+            <div class="container faq_page" id="main">
+                <div class="pane">
+                    <h1>FAQ</h1>
+                    <ul id="bullet-links">
+                        <li><a class="faq-link" href="#faq1">What do you mean by 'publicly-owned'?</a></li>
+                        <li><a class="faq-link" href="#faq2">Why are we using KickStarter to raise funds?</a></li>
+                        <li><a class="faq-link" href="#faq3">How will the project be funded after it's launch?</a></li>
+                        <li><a class="faq-link" href="#faq4">What level of government will be eligible to use the platform?</a></li>
+                        <li><a class="faq-link" href="#faq5">How will you determine who is a representative? How will you prevent abuse?</a></li>
+                        <li><a class="faq-link" href="#faq6">Why is the platform open-source?</a></li>
+                        <li><a class="faq-link" href="#faq7">Are you trying to create 'Direct Democracy'?</a></li>
+                        <li><a class="faq-link" href="#faq8">Why would my representatives use this platform?</a></li>
+                        <li><a class="faq-link" href="#faq9">How will constituents questions be answered? Won't there be too many questions to answer?</a></li>
+                    </ul>
+                    <p>Don't see your question here? <a href="mailto:hello@asq.us">Email the Asq Force!</a></p>
+                </div>
                 <hr>
-            <div class="pane">
-                <h2>People do care about issues that affect them.</h2>
-                <h2>People will respond to their representatives.</h2>
-                <h2>People want to communicate using means they know:</h2> 
-                <ul>
-                    <li><h2>Phones</h2></li>
-                    <li><h2>Social media</h2></li>
-                    <li><h2>The interent at large</h2></li>
-                </ul>
+                <div class="pane" id="faq1">
+                    <h3>What do you mean by 'publicly-owned'?</h3>
+                    <p>AsqUs is being built by a non-profit organization for the people and by the people. We intend to modernize democracy and place this platform in the public domain, being open-source and fully transparent.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq2">
+                    <h3>Why are we using KickStarter to raise funds?</h3>
+                    <p>We are modernizing democracy by building a dialogue platform that will be a public good. Crowd-based fund-raising is the most consistent approach to this democratic ideal.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq3">
+                    <h3>How will the project be funded after it's launch?</h3>
+                    <p>We believe an open, issue-based dialogue platform will be a valuable improvement to democracy. As such, we intend to support it in a way similar to Wikipedia - primarily through donations and grants.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq4">
+                    <h3>What level of government will be eligible to use this platform?</h3>
+                    <p>Any elected official or public representative at any level - city, county, state, and national.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq5">
+                    <h3>How will you determine who is a representative? How will you prevent abuse?</h3>
+                    <p>Initially, we will contact representatives where we have contacts and connections. We will verify representatives over the phone and again by email.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq6">
+                    <h3>Why is the platform open-source?</h3>
+                    <p>The platform is all about transparency. The more contributors we get, the better the platform will be. 
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq7">
+                    <h3>Are you trying to create 'Direct Democracy'?</h3>
+                    <p>No. A direct democracy is probably neither feasible nor advisable. Nonetheless, constituents should still be represented. We are creating an easy way for representatives to find out how their constituents feel about issues. It also allows people to ask questions of their constituents.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq8">
+                    <h3>Why would my representatives use this platform?</h3>
+                    <p>Many representatives currently spend between 5-10% of their budgets on polling. Our platform is free to use. As well, when a representative gets into office, s/he typically only has a small subset of people on their mailing list, and those tend to be of the same party. AsqUs allows them to reach out to people of any political leaning. We will also be aggressively promoting the platform so they don�t have to do that work. Finally, reaching out to constituents is something they ought to be doing; and with a free platform, they won�t have any excuse. 
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq9">
+                    <h3>How will constituents questions be answered? Won't there be too many questions to answer?</h3>
+                    <p>Elected officials and their staff are people too and won't be able to answer every single question that is asked. !!! INSERT COPY ABOUT BUBBLING UP OF QUESTIONS
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    </script>
-    
-    <!-- CONTACTS -->
-    <script type="text/template" id="contact">
-    <div id="main-pane">
-        <div class="container vision_page" id="main">
-            <div class="pane">
-                <h1>Want to chat with the Asq Force?</h1>
+        </script>
 
-                <div id="asq-force-pic"></div>        
-
-                <h2>We'd love to hear from you! <a href="mailto:hello@asq.us" target="_blank">hello@asq.us</a></h2>
+        <!-- TEAM -->
+        <script type="text/template" id="team">
+        <div id="main-pane">
+            <div class="container team_page" id="main">
+                <div class="pane">
+                    <h1>Team</h1>        
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu molestie erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris tempor varius bibendum. Nam rhoncus fringilla lectus sit amet dapibus. Nunc urna elit, ornare porta luctus vel, feugiat eu nunc. Vestibulum non ante vel est porta mollis non et nibh. Proin malesuada ligula sodales lorem laoreet volutpat. Phasellus bibendum posuere risus, quis volutpat neque gravida at. Donec ut augue erat.
+                    </p>
+                </div>
+                <div class="icons pane">
+                    <ul id="team-icons">
+                        <li>
+                        <a class="person" href="#brad_chick">
+                            <img class="avatar" height="60" width="60" src="img/brad.png">
+                            <div class="small-bio">
+                                <div class="name">Brad Chick</div>
+                                <div class="role">Founder</div>
+                            </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a class="person" href="#adam_williams">
+                            <img class="avatar" height="60" width="60" src="img/adam.png">
+                            <div class="small-bio">
+                                <div class="name">Adam Williams</div>
+                                <div class="role">Founder</div>
+                            </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a class="person" href="#jake_schwartz">
+                            <img class="avatar" height="60" width="60" src="img/jake.png">
+                            <div class="small-bio">
+                                <div class="name">Jake Schwartz</div>
+                                <div class="role">Founder</div>
+                            </div>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+    <!-- BRAD -->
+                <div class="member pane" id="brad_chick">
+                    <img class="avatar" height="100" width="100" src="img/brad.png">
+                    <div class="bio">
+                        <h3>Brad Chick</h3>
+                        <span>Founder</span>
+                        <p>Mauris nulla orci, mattis nec consectetur tempor, consequat et ante. Donec arcu nunc, feugiat vel adipiscing id, adipiscing vitae nisl. Nam placerat quam et enim laoreet pharetra. Donec eu arcu in metus bibendum porta et eu tortor. Nam eleifend faucibus elit id sollicitudin. Cras faucibus ultrices feugiat. Sed diam tortor, auctor ac aliquet nec, pulvinar a justo. Fusce dignissim felis non risus consequat cursus. Suspendisse tincidunt eleifend ligula ut placerat. Curabitur neque dui, tincidunt vitae dignissim vel, cursus ut ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean malesuada turpis eu dui aliquam et interdum neque adipiscing.
+                        </p>
+                        <div class="social">
+                            <a href="http://twitter.com/asqus" class="twitter">AsqUs</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+    <!-- ADAM -->
+                <div class="member pane" id="adam_williams">
+                    <img class="avatar" height="100" width="100" src="img/adam.png">
+                    <div class="bio">
+                        <h3>Adam Williams</h3>
+                        <span>Founder</span>
+                        <p>Mauris nulla orci, mattis nec consectetur tempor, consequat et ante. Donec arcu nunc, feugiat vel adipiscing id, adipiscing vitae nisl. Nam placerat quam et enim laoreet pharetra. Donec eu arcu in metus bibendum porta et eu tortor. Nam eleifend faucibus elit id sollicitudin. Cras faucibus ultrices feugiat. Sed diam tortor, auctor ac aliquet nec, pulvinar a justo. Fusce dignissim felis non risus consequat cursus. Suspendisse tincidunt eleifend ligula ut placerat. Curabitur neque dui, tincidunt vitae dignissim vel, cursus ut ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean malesuada turpis eu dui aliquam et interdum neque adipiscing.
+                        </p>
+                        <div class="social">
+                            <a href="http://twitter.com/asqus" class="twitter">AsqUs</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+    <!-- JAKE -->
+                <div class="member pane" id="jake_schwartz">
+                    <img class="avatar" height="100" width="100" src="img/jake.png">
+                    <div class="bio">
+                        <h3>Jake Schwartz</h3>
+                        <span>Founder</span>
+                        <p>Mauris nulla orci, mattis nec consectetur tempor, consequat et ante. Donec arcu nunc, feugiat vel adipiscing id, adipiscing vitae nisl. Nam placerat quam et enim laoreet pharetra. Donec eu arcu in metus bibendum porta et eu tortor. Nam eleifend faucibus elit id sollicitudin. Cras faucibus ultrices feugiat. Sed diam tortor, auctor ac aliquet nec, pulvinar a justo. Fusce dignissim felis non risus consequat cursus. Suspendisse tincidunt eleifend ligula ut placerat. Curabitur neque dui, tincidunt vitae dignissim vel, cursus ut ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean malesuada turpis eu dui aliquam et interdum neque adipiscing.
+                        </p>
+                        <div class="social">
+                            <a href="http://twitter.com/asqus" class="twitter">AsqUs</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    </script>
+        </script>
+     
+        <!-- VISION -->
+        <script type="text/template" id="vision">
+        <div id="main-pane">
+            <div class="container vision_page" id="main">
+                <div class="pane">
+                    <h1>Vision</h1>
+                    <ul id="bullet-links">
+                        <li><a class="vision-link" href="#mission">Mission</a></li>
+                        <li><a class="vision-link" href="#problem">Problem</a></li>
+                        <li><a class="vision-link" href="#solution">Solution</a></li>
+                        <li><a class="vision-link" href="#funding">Funding/Resources</a></li>
+                        <li><a class="vision-link" href="#features">Features</a></li>
+                    </ul>
+            <p>
+            People want to be heard. They want to feel like they matter. But within our current political system, people are frustrated because they feel that just isn't happening.
+    </p>
+    <p>
+    What happened to the notion of representation in democracy? When was the last time your representative (at any level) reached out and asked how you felt about some issue?
+    </p>
+    <p>
+    This rarely happens (unless maybe you've written a large check).
+    </p>
+    <p>
+    Asq.Us was founded to tackle this problem. We are putting representation back into democracy.
+    </p>
+    <p>
+    With modern technology, it can't be that difficult to have a meaningful dialogue between representatives and constituents. Democracy can be made much simpler by allowing our representatives to easily guage the opinions of their constituents, and vice versa - allowing constituents to ask questions of their representatives.
+    </p>
+    <p>
+    And this should be a public dialogue. We should see how people feel about issues that affect them. And we should see how our representatives act in the face of that.
+    </p>
+    <p>
+    How are we gonna get there? We're certainly not going to leave this to our politicians. We, the people, need to build this platform.
+    </p>
+    <p>
+    Asq.Us is a publicly-owned political dialogue platform, connecting you to your representatives. We are building it and it will be free to use by any qualifed representative. If we build it, they will come.
+    </p>
 
-    <script type="text/javascript" src="js/app.js"></script>
-
-</head>
-<body>
-    <script type="text/javascript">
-        $(document).ready(function() { 
-            $('.dropdown-toggle').dropdown()
-            console.log("success")
-        });
-    </script>
-
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span> 
-                <span class="icon-bar"></span> 
-                <span class="icon-bar"></span> 
-            </a>
-            <a class="brand" href="#"><img src="img/logo.png"></img></a>
-            <ul class="nav pull-left">
-                <p class="navbar-text">Modernizing Democracy</p>
-            </ul>
-            <div class="nav-collapse">
-                <ul class="nav pull-right">
-                    <li><a href="#">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#"
-                            class="dropdown-toggle"
-                            data-toggle="dropdown">About<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        	<li><a href="#vision">Vision</a></li>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                            <li><a href="#principles">Dogma</a></li>
+                </div>
+                <hr>
+                <div class="pane" id="mission">
+                    <h3>Mission</h3>
+                    <p>To create a political dialogue platform that promotes substantive discource, transparency and accountability.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="problem">
+                    <h3>Problem</h3>
+                    <p>
+    There is very little, if any, meaningful dialogue between representatives and constituents. People's voices are not heard, and rarely solicited. This leads to disillusionment with the political process and distrust of government.
+                    </p>
+                    <p>
+    Secondly, representatives typically do not have the resources (technical expertise, funding or time) to invest in a sophisticated dialogue platform. Costs associated with current polling options inherently limit usage and voter engagement.
+                    </p>
+                    <p>
+    As well, dialogue driven exclusively from one representative can be seen as ultimately motivated by fundraising desires.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="solution">
+                    <h3>Solution</h3>
+                    <p>
+    Leveraging modern Internet technology and connectivity, we will build a publicly-funded, free-to-use dialogue platform that will allow representatives to quickly poll their constituents regarding issues. Politicians will be able to consult their constituents, in real-time, on as many issues as they deem important.
+                    </p>
+                    <p>
+    We assume that constituents do want to be solicited, on a regular basis, by their representatives, provided the system is simple and meaningful.
+                    </p>
+                    <p>
+    The platform will be non-invasive - accessing people where they are - online, facebook, on their phones (smart phones, dumb phones, and land lines), providing better statistical accuracy of the results than current polling methods.
+                    </p>
+                    <p>
+    We are asking people to 'have a voice', to be part of the political dialogue. We are not asking them to support any particular representative or cause. Encouraging people to support democracy generally, while being politically neutral, will lead to more participation.
+                    </p>
+                    <p>
+    The system will be completely granular for constituents, allowing them complete control over their level of engagement, having options to participate on local/regional/state/national levels, as well as how frequently they are solicited and even over what types of issues.
+                    </p>
+                    <p>
+    Polls and their results will be filterable by important demographic variables (gender, age, region, etc.) - any variable that the participant wants to expose.
+                    </p>
+                    <p>
+    To guarantee the integrity of the system, it will not be a commercial venture, but must be run by a non-profit and fully-owned by the constituents themselves. We, the people, will offer the system to our representatives and expect them to use it. That is what a democracy is. We expect to be represented.
+                    </p>
+                    <p>
+    Results will be publicly viewable. Votes are tallied anonymously, but you will be able to see how you voted (which is private), how others voted as a group, and ultimately, what your representative did in the face of how the public felt (how s/he voted or did/not support some issue).
+                    </p>
+                    <p>
+    We will also be able to see how frequently a representative leveraged the platform, which will further encourage them to use the platform.
+                    </p>
+                    <p>
+    Each issue be supported by a more in-depth discussion of the issue, involving a summary, the results of polling, community-weighted conversation/comments and official positions of the relevant representatives.
+                    </p>
+                    <p>
+    This deeper discussion can be accessed easily, from links within each initial poll.
+                    </p>
+                    <p>
+    Within a short time, we will have a modern platform for enriched political dialogue.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="funding">
+                    <h3>Funding/Resources</h3>
+                    <p>
+    Within a short time (~3 years), we expect to be fully funded by the constituents themselves. The platform will be a valuable public resource, similar to Wikipedia, that they will be happy to support with small contributions.
+                    </p>
+                    <p>
+    Before we can get to that level of grass-roots support, we are soliciting grants and donations.
+                    </p>
+                    <p>
+    We anticipate maintaining the platform with a small amount of full-time employees. We also expect larger participation by the open-source community that want to work on meaningful solutions for a better world.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Free</li>
+                        <li>Easy to use</li>
+                        <li>Benefits to the Representatives</li>
+                        <ul>
+                            <li>Gather important insight</li>
+                            <li>Gain trust</li>
+                            <li>Save both time and money</li>
                         </ul>
-                    </li>
-                    <li class="pull-right"><a href="#contact">Contact</a></li>
-                    <li class="pull-right"><a href="http://launch.asq.us">Sign Up</a></li>
+                        <li>Benefits to the Constituents</li>
+                        <ul>
+                            <li>Voice concern beyond voting</li>
+                            <li>Ability to learn from community</li>
+                            <li>Accessible at leisure</li>
+                        </ul>
+                        <li>Benefits to the Political Process</li>
+                        <ul>
+                            <li>Greater involvment in democracy</li>
+                            <li>More informed constituents</li>
+                            <li>More civilised political discourse</li>
+                            <li>Elected officials less beholden to special interests</li>
+                        </ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        </script>
+        
+        <!-- PRINCIPLES -->
+        <script type="text/template" id="principles">
+        <div id="main-pane">
+            <div class="container vision_page" id="main">
+                <div class="pane">
+                    <h1>Mantra</h1>
+                    <h3>Our guiding principles</h3>
+                </div>
+                    <hr>
+                <div class="pane">
+                    <h2>People do care about issues that affect them.</h2>
+                    <h2>People will respond to their representatives.</h2>
+                    <h2>People want to communicate using means they know:</h2> 
+                    <ul>
+                        <li><h2>Phones</h2></li>
+                        <li><h2>Social media</h2></li>
+                        <li><h2>The interent at large</h2></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </script>
+        
+        <!-- CONTACTS -->
+        <script type="text/template" id="contact">
+        <div id="main-pane">
+            <div class="container vision_page" id="main">
+                <div class="pane">
+                    <h1>Want to chat with the Asq Force?</h1>
+
+                    <div id="asq-force-pic"></div>        
+
+                    <h2>We'd love to hear from you! <a href="mailto:hello@asq.us" target="_blank">hello@asq.us</a></h2>
+                </div>
+            </div>
+        </div>
+        </script>
+
+        <script type="text/javascript" src="js/app.js"></script>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            $(document).ready(function() { 
+                $('.dropdown-toggle').dropdown()
+                console.log("success")
+            });
+        </script>
+
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                </a>
+                <a class="brand" href="#"><img src="img/logo.png"></img></a>
+                <ul class="nav pull-left">
+                    <p class="navbar-text">Modernizing Democracy</p>
                 </ul>
-            </div>
-            
+                <div class="nav-collapse">
+                    <ul class="nav pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#"
+                                class="dropdown-toggle"
+                                data-toggle="dropdown">About<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#vision">Vision</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#principles">Dogma</a></li>
+                            </ul>
+                        </li>
+                        <li class="pull-right"><a href="#contact">Contact</a></li>
+                        <li class="pull-right"><a href="http://launch.asq.us">Sign Up</a></li>
+                    </ul>
+                </div>
+                
+                </div>
             </div>
         </div>
-    </div>
-    <div id="content">
-        <h1>BACKBONE.js BROKEN</h1>
-    </div>
-    <div id="footer-pane">
-        <div class="container" id="footer">
-            <div class="row">
-                <div class="span1 offset3">
-                    <h3>About</h3>
-                    <ul class="unstyled">
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#vision">Vision</a></li>
-                        <li><a href="#principles">Principles</a></li>
-                        <li><a href="#jobs">Jobs</a></li>
-                        <li><a href="#press">Press</a></li>
-                    </ul>
+        <div id="content">
+            <h1>BACKBONE.js BROKEN</h1>
+        </div>
+        <div id="footer-pane">
+            <div class="container" id="footer">
+                <div class="row">
+                    <div class="span1 offset3">
+                        <h3>About</h3>
+                        <ul class="unstyled">
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#vision">Vision</a></li>
+                            <li><a href="#principles">Principles</a></li>
+                            <li><a href="#jobs">Jobs</a></li>
+                            <li><a href="#press">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="span1 offset1">
+                        <h3>Policies</h3>
+                        <ul class="unstyled">
+                            <li><a href="#transparency">Transparency</a></li>
+                            <li><a href="#privacy">Privacy</a></li>
+                            <li><a href="#security">Security</a></li>
+                            <li><a href="#terms">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="span1 offset1">
+                        <h3>Elsewhere</h3>
+                        <ul class="unstyled">
+                            <li><a href="http://twitter.com/AsqUs">Twitter</a></li>
+                            <li><a href="http://facebook.com/AsqUsOrg">Facebook</a></li>
+                            <li><a href="http://github.com/AsqUs">Github</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="span1 offset1">
-                    <h3>Policies</h3>
-                    <ul class="unstyled">
-                        <li><a href="#transparency">Transparency</a></li>
-                        <li><a href="#privacy">Privacy</a></li>
-                        <li><a href="#security">Security</a></li>
-                        <li><a href="#terms">Terms of Use</a></li>
-                    </ul>
+                <div class="row">
+                    <h6 align="center">� 2012 Asq.Us - ALL RIGHTS RESERVED.</h6>
                 </div>
-                <div class="span1 offset1">
-                    <h3>Elsewhere</h3>
-                    <ul class="unstyled">
-                        <li><a href="http://twitter.com/AsqUs">Twitter</a></li>
-                        <li><a href="http://facebook.com/AsqUsOrg">Facebook</a></li>
-                        <li><a href="http://github.com/AsqUs">Github</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <h6 align="center">� 2012 Asq.Us - ALL RIGHTS RESERVED.</h6>
             </div>
         </div>
+        
+    </body>
+    </html>
+    =======
+
+    <html>
+    <head>
+        
+        <title>Asq.Us - Modernizing Democracy</title>
+        
+        <!-- META Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/site.css" media="screen" rel="stylesheet" type="text/css">
+            <!-- it's important that responsive is after main -->
+        <link href="css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css">
+
+        <!-- JS -->
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/underscore.js"></script>
+        <script type="text/javascript" src="js/backbone.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+
+        <!-- View Templates -->
+
+        <!-- HOME -->
+        <script type="text/template" id="home">
+
+    <div id="headerIntro">
+    <div class="container">
+    <div class="row" id="introPane">
+
+    <div class="intro_container">
+      <div id="introOverlay">
+        <div  id="tablet">
+            <div class="speech_bubble hl_temp from_right" style="left:200px; top:140px"></div>
+            <div class="speech_bubble hl_temp from_right bubble_fade" style="left:100px; top:100px"></div>
+            <div class="speech_bubble hl_temp from_right bubble_fade" style="left:140px; top:160px"></div>
+            <div class="speech_bubble hl_temp from_right bubble_fade" style="left:305px; top:80px"></div>
+            <div class="speech_bubble hl_temp from_right bubble_fade" style="left:270px; top:210px"></div>
+        </div>
+      </div>
+
+      <div class="introTitle">
+        <h1>Let your voice</h1>
+        <h1>be heard.</h1>
+        <h2>Connect with your elected officials</h2>
+        <h2>like never before.</h2>
+        <br>
+        <a href="#signup">
+        <img src="img/link_to_email.png"  />
+        </a>
+        <div onclick="location.href='#signup';" style="cursor:pointer; visibility:hidden;" class="input-append sendToEmail">
+            <input size="16" type="text" disabled="disabled">
+            <button class="btn btn-success" type="button">Join!</button>
+        </div>
+      </div>
     </div>
-    
-</body>
-</html>
+    </div>
+    </div>
+    </div>
+
+    <div class="container" id="main">
+    <div class="row span12">
+        <!-- 
+        <div class="row">
+            <div id="front-nav">
+                <h1><a href="#ask">Question</a></h1>
+                <h1><a href="#answer">Respond</a></h1>
+                <h1><a href="#community">Discover</a></h1>
+            </div>
+        </div>
+        <hr>
+        -->
+        <div class="row">
+            <div class="front_pane" id="ask">
+                <div class="askQuestion">
+                  <div class="leftText">
+                    <h1>Ask your elected officals about issues that are important to you.</h1>
+                  </div>
+                  <div class="rightImage">
+                    <div class="front">
+                    </div>
+                    <div class="back">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="front_pane" id="answer">
+                <div class="answerQuestion">
+                  <div class="fb-quiz">
+                  </div>
+                  <div class="rightText">
+                    <h1>Answer questions directly from your representatives and have your voice heard.</h1>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="front_pane" id="community">
+                <div class="communityView">
+                  <div class="leftText">
+                    <h1>Discover and explore the issues that matter most within your community.</h1>
+                  </div>
+                  <div class="iphone-display" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="front_pane" id="signup">
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+        </script>
+
+        <!-- FAQ -->
+        <script type="text/template" id="faq">
+        <div id="main-pane">
+            <div class="container faq_page" id="main">
+                <div class="pane">
+                    <h1>FAQ</h1>
+                    <ul id="bullet-links">
+                        <li><a class="faq-link" href="#faq1">What do you mean by 'publicly-owned'?</a></li>
+                        <li><a class="faq-link" href="#faq2">Why are we using KickStarter to raise funds?</a></li>
+                        <li><a class="faq-link" href="#faq3">How will the project be funded after it's launch?</a></li>
+                        <li><a class="faq-link" href="#faq4">What level of government will be eligible to use the platform?</a></li>
+                        <li><a class="faq-link" href="#faq5">How will you determine who is a representative? How will you prevent abuse?</a></li>
+                        <li><a class="faq-link" href="#faq6">Why is the platform open-source?</a></li>
+                        <li><a class="faq-link" href="#faq7">Are you trying to create 'Direct Democracy'?</a></li>
+                        <li><a class="faq-link" href="#faq8">Why would my representatives use this platform?</a></li>
+                        <li><a class="faq-link" href="#faq9">How will constituents questions be answered? Won't there be too many questions to answer?</a></li>
+                    </ul>
+                    <p>Don't see your question here? <a href="mailto:hello@asq.us">Email the Asq Force!</a></p>
+                </div>
+                <hr>
+                <div class="pane" id="faq1">
+                    <h3>What do you mean by 'publicly-owned'?</h3>
+                    <p>AsqUs is being built by a non-profit organization for the people and by the people. We intend to modernize democracy and place this platform in the public domain, being open-source and fully transparent.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq2">
+                    <h3>Why are we using KickStarter to raise funds?</h3>
+                    <p>We are modernizing democracy by building a dialogue platform that will be a public good. Crowd-based fund-raising is the most consistent approach to this democratic ideal.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq3">
+                    <h3>How will the project be funded after it's launch?</h3>
+                    <p>We believe an open, issue-based dialogue platform will be a valuable improvement to democracy. As such, we intend to support it in a way similar to Wikipedia - primarily through donations and grants.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq4">
+                    <h3>What level of government will be eligible to use this platform?</h3>
+                    <p>Any elected official or public representative at any level - city, county, state, and national.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq5">
+                    <h3>How will you determine who is a representative? How will you prevent abuse?</h3>
+                    <p>Initially, we will contact representatives where we have contacts and connections. We will verify representatives over the phone and again by email.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq6">
+                    <h3>Why is the platform open-source?</h3>
+                    <p>The platform is all about transparency. The more contributors we get, the better the platform will be. 
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq7">
+                    <h3>Are you trying to create 'Direct Democracy'?</h3>
+                    <p>No. A direct democracy is probably neither feasible nor advisable. Nonetheless, constituents should still be represented. We are creating an easy way for representatives to find out how their constituents feel about issues. It also allows people to ask questions of their constituents.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq8">
+                    <h3>Why would my representatives use this platform?</h3>
+                    <p>Many representatives currently spend between 5-10% of their budgets on polling. Our platform is free to use. As well, when a representative gets into office, s/he typically only has a small subset of people on their mailing list, and those tend to be of the same party. AsqUs allows them to reach out to people of any political leaning. We will also be aggressively promoting the platform so they don�t have to do that work. Finally, reaching out to constituents is something they ought to be doing; and with a free platform, they won�t have any excuse. 
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="faq9">
+                    <h3>How will constituents questions be answered? Won't there be too many questions to answer?</h3>
+                    <p>Elected officials and their staff are people too and won't be able to answer every single question that is asked. !!! INSERT COPY ABOUT BUBBLING UP OF QUESTIONS
+                    </p>
+                </div>
+            </div>
+        </div>
+        </script>
+
+        <!-- TEAM -->
+        <script type="text/template" id="team">
+        <div id="main-pane">
+            <div class="container team_page" id="main">
+                <div class="pane">
+                    <h1>Team</h1>        
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu molestie erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris tempor varius bibendum. Nam rhoncus fringilla lectus sit amet dapibus. Nunc urna elit, ornare porta luctus vel, feugiat eu nunc. Vestibulum non ante vel est porta mollis non et nibh. Proin malesuada ligula sodales lorem laoreet volutpat. Phasellus bibendum posuere risus, quis volutpat neque gravida at. Donec ut augue erat.
+                    </p>
+                </div>
+                <div class="icons pane">
+                    <ul id="team-icons">
+                        <li>
+                        <a class="person" href="#brad_chick">
+                            <img class="avatar" height="60" width="60" src="img/brad.png">
+                            <div class="small-bio">
+                                <div class="name">Brad Chick</div>
+                                <div class="role">Founder</div>
+                            </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a class="person" href="#adam_williams">
+                            <img class="avatar" height="60" width="60" src="img/adam.png">
+                            <div class="small-bio">
+                                <div class="name">Adam Williams</div>
+                                <div class="role">Founder</div>
+                            </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a class="person" href="#jake_schwartz">
+                            <img class="avatar" height="60" width="60" src="img/jake.png">
+                            <div class="small-bio">
+                                <div class="name">Jake Schwartz</div>
+                                <div class="role">Founder</div>
+                            </div>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+    <!-- BRAD -->
+                <div class="member pane" id="brad_chick">
+                    <img class="avatar" height="100" width="100" src="img/brad.png">
+                    <div class="bio">
+                        <h3>Brad Chick</h3>
+                        <span>Founder</span>
+                        <p>Mauris nulla orci, mattis nec consectetur tempor, consequat et ante. Donec arcu nunc, feugiat vel adipiscing id, adipiscing vitae nisl. Nam placerat quam et enim laoreet pharetra. Donec eu arcu in metus bibendum porta et eu tortor. Nam eleifend faucibus elit id sollicitudin. Cras faucibus ultrices feugiat. Sed diam tortor, auctor ac aliquet nec, pulvinar a justo. Fusce dignissim felis non risus consequat cursus. Suspendisse tincidunt eleifend ligula ut placerat. Curabitur neque dui, tincidunt vitae dignissim vel, cursus ut ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean malesuada turpis eu dui aliquam et interdum neque adipiscing.
+                        </p>
+                        <div class="social">
+                            <a href="http://twitter.com/asqus" class="twitter">AsqUs</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+    <!-- ADAM -->
+                <div class="member pane" id="adam_williams">
+                    <img class="avatar" height="100" width="100" src="img/adam.png">
+                    <div class="bio">
+                        <h3>Adam Williams</h3>
+                        <span>Founder</span>
+                        <p>Mauris nulla orci, mattis nec consectetur tempor, consequat et ante. Donec arcu nunc, feugiat vel adipiscing id, adipiscing vitae nisl. Nam placerat quam et enim laoreet pharetra. Donec eu arcu in metus bibendum porta et eu tortor. Nam eleifend faucibus elit id sollicitudin. Cras faucibus ultrices feugiat. Sed diam tortor, auctor ac aliquet nec, pulvinar a justo. Fusce dignissim felis non risus consequat cursus. Suspendisse tincidunt eleifend ligula ut placerat. Curabitur neque dui, tincidunt vitae dignissim vel, cursus ut ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean malesuada turpis eu dui aliquam et interdum neque adipiscing.
+                        </p>
+                        <div class="social">
+                            <a href="http://twitter.com/asqus" class="twitter">AsqUs</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+    <!-- JAKE -->
+                <div class="member pane" id="jake_schwartz">
+                    <img class="avatar" height="100" width="100" src="img/jake.png">
+                    <div class="bio">
+                        <h3>Jake Schwartz</h3>
+                        <span>Founder</span>
+                        <p>Mauris nulla orci, mattis nec consectetur tempor, consequat et ante. Donec arcu nunc, feugiat vel adipiscing id, adipiscing vitae nisl. Nam placerat quam et enim laoreet pharetra. Donec eu arcu in metus bibendum porta et eu tortor. Nam eleifend faucibus elit id sollicitudin. Cras faucibus ultrices feugiat. Sed diam tortor, auctor ac aliquet nec, pulvinar a justo. Fusce dignissim felis non risus consequat cursus. Suspendisse tincidunt eleifend ligula ut placerat. Curabitur neque dui, tincidunt vitae dignissim vel, cursus ut ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean malesuada turpis eu dui aliquam et interdum neque adipiscing.
+                        </p>
+                        <div class="social">
+                            <a href="http://twitter.com/asqus" class="twitter">AsqUs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </script>
+     
+        <!-- VISION -->
+        <script type="text/template" id="vision">
+        <div id="main-pane">
+            <div class="container vision_page" id="main">
+                <div class="pane">
+                    <h1>Vision</h1>
+                    <ul id="bullet-links">
+                        <li><a class="vision-link" href="#mission">Mission</a></li>
+                        <li><a class="vision-link" href="#problem">Problem</a></li>
+                        <li><a class="vision-link" href="#solution">Solution</a></li>
+                        <li><a class="vision-link" href="#funding">Funding/Resources</a></li>
+                        <li><a class="vision-link" href="#features">Features</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="pane" id="mission">
+                    <h3>Mission</h3>
+                    <p>To create a political dialogue platform that promotes substantive discource, transparency and accountability.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="problem">
+                    <h3>Problem</h3>
+                    <p>
+    There is very little, if any, meaningful dialogue between representatives and constituents. People's voices are not heard, and rarely solicited. This leads to disillusionment with the political process and distrust of government.
+                    </p>
+                    <p>
+    Secondly, representatives typically do not have the resources (technical expertise, funding or time) to invest in a sophisticated dialogue platform. Costs associated with current polling options inherently limit usage and voter engagement.
+                    </p>
+                    <p>
+    As well, dialogue driven exclusively from one representative can be seen as ultimately motivated by fundraising desires.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="solution">
+                    <h3>Solution</h3>
+                    <p>
+    Leveraging modern Internet technology and connectivity, we will build a publicly-funded, free-to-use dialogue platform that will allow representatives to quickly poll their constituents regarding issues. Politicians will be able to consult their constituents, in real-time, on as many issues as they deem important.
+                    </p>
+                    <p>
+    We assume that constituents do want to be solicited, on a regular basis, by their representatives, provided the system is simple and meaningful.
+                    </p>
+                    <p>
+    The platform will be non-invasive - accessing people where they are - online, facebook, on their phones (smart phones, dumb phones, and land lines), providing better statistical accuracy of the results than current polling methods.
+                    </p>
+                    <p>
+    We are asking people to 'have a voice', to be part of the political dialogue. We are not asking them to support any particular representative or cause. Encouraging people to support democracy generally, while being politically neutral, will lead to more participation.
+                    </p>
+                    <p>
+    The system will be completely granular for constituents, allowing them complete control over their level of engagement, having options to participate on local/regional/state/national levels, as well as how frequently they are solicited and even over what types of issues.
+                    </p>
+                    <p>
+    Polls and their results will be filterable by important demographic variables (gender, age, region, etc.) - any variable that the participant wants to expose.
+                    </p>
+                    <p>
+    To guarantee the integrity of the system, it will not be a commercial venture, but must be run by a non-profit and fully-owned by the constituents themselves. We, the people, will offer the system to our representatives and expect them to use it. That is what a democracy is. We expect to be represented.
+                    </p>
+                    <p>
+    Results will be publicly viewable. Votes are tallied anonymously, but you will be able to see how you voted (which is private), how others voted as a group, and ultimately, what your representative did in the face of how the public felt (how s/he voted or did/not support some issue).
+                    </p>
+                    <p>
+    We will also be able to see how frequently a representative leveraged the platform, which will further encourage them to use the platform.
+                    </p>
+                    <p>
+    Each issue be supported by a more in-depth discussion of the issue, involving a summary, the results of polling, community-weighted conversation/comments and official positions of the relevant representatives.
+                    </p>
+                    <p>
+    This deeper discussion can be accessed easily, from links within each initial poll.
+                    </p>
+                    <p>
+    Within a short time, we will have a modern platform for enriched political dialogue.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="funding">
+                    <h3>Funding/Resources</h3>
+                    <p>
+    Within a short time (~3 years), we expect to be fully funded by the constituents themselves. The platform will be a valuable public resource, similar to Wikipedia, that they will be happy to support with small contributions.
+                    </p>
+                    <p>
+    Before we can get to that level of grass-roots support, we are soliciting grants and donations.
+                    </p>
+                    <p>
+    We anticipate maintaining the platform with a small amount of full-time employees. We also expect larger participation by the open-source community that want to work on meaningful solutions for a better world.
+                    </p>
+                </div>
+                <hr>
+                <div class="pane" id="features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Free</li>
+                        <li>Easy to use</li>
+                        <li>Benefits to the Representatives</li>
+                        <ul>
+                            <li>Gather important insight</li>
+                            <li>Gain trust</li>
+                            <li>Save both time and money</li>
+                        </ul>
+                        <li>Benefits to the Constituents</li>
+                        <ul>
+                            <li>Voice concern beyond voting</li>
+                            <li>Ability to learn from community</li>
+                            <li>Accessible at leisure</li>
+                        </ul>
+                        <li>Benefits to the Political Process</li>
+                        <ul>
+                            <li>Greater involvment in democracy</li>
+                            <li>More informed constituents</li>
+                            <li>More civilised political discourse</li>
+                            <li>Elected officials less beholden to special interests</li>
+                        </ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        </script>
+        
+        <!-- PRINCIPLES -->
+        <script type="text/template" id="principles">
+        <div id="main-pane">
+            <div class="container vision_page" id="main">
+                <div class="pane">
+                    <h1>Mantra</h1>
+                    <h3>Our guiding principles</h3>
+                </div>
+                    <hr>
+                <div class="pane">
+                    <h2>People do care about issues that affect them.</h2>
+                    <h2>People will respond to their representatives.</h2>
+                    <h2>People want to communicate using means they know:</h2> 
+                    <ul>
+                        <li><h2>Phones</h2></li>
+                        <li><h2>Social media</h2></li>
+                        <li><h2>The interent at large</h2></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </script>
+        
+        <!-- CONTACTS -->
+        <script type="text/template" id="contact">
+        <div id="main-pane">
+            <div class="container vision_page" id="main">
+                <div class="pane">
+                    <h1>Want to chat with the Asq Force?</h1>
+
+                    <div id="asq-force-pic"></div>        
+
+                    <h2>We'd love to hear from you! <a href="mailto:hello@asq.us" target="_blank">hello@asq.us</a></h2>
+                </div>
+            </div>
+        </div>
+        </script>
+
+        <script type="text/javascript" src="js/app.js"></script>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            $(document).ready(function() { 
+                $('.dropdown-toggle').dropdown()
+                console.log("success")
+            });
+        </script>
+
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                </a>
+                <a class="brand" href="#"><img src="img/logo.png"></img></a>
+                <ul class="nav pull-left">
+                    <p class="navbar-text">Modernizing Democracy</p>
+                </ul>
+                <div class="nav-collapse">
+                    <ul class="nav pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#"
+                                class="dropdown-toggle"
+                                data-toggle="dropdown">About<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#vision">Vision</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#principles">Dogma</a></li>
+                            </ul>
+                        </li>
+                        <li class="pull-right"><a href="#contact">Contact</a></li>
+                        <li class="pull-right"><a href="http://launch.asq.us">Sign Up</a></li>
+                    </ul>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <h1>BACKBONE.js BROKEN</h1>
+        </div>
+        <div id="footer-pane">
+            <div class="container" id="footer">
+                <div class="row">
+                    <div class="span1 offset3">
+                        <h3>About</h3>
+                        <ul class="unstyled">
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#vision">Vision</a></li>
+                            <li><a href="#principles">Principles</a></li>
+                            <li><a href="#jobs">Jobs</a></li>
+                            <li><a href="#press">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="span1 offset1">
+                        <h3>Policies</h3>
+                        <ul class="unstyled">
+                            <li><a href="#transparency">Transparency</a></li>
+                            <li><a href="#privacy">Privacy</a></li>
+                            <li><a href="#security">Security</a></li>
+                            <li><a href="#terms">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="span1 offset1">
+                        <h3>Elsewhere</h3>
+                        <ul class="unstyled">
+                            <li><a href="http://twitter.com/AsqUs">Twitter</a></li>
+                            <li><a href="http://facebook.com/AsqUsOrg">Facebook</a></li>
+                            <li><a href="http://github.com/AsqUs">Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6 align="center">� 2012 Asq.Us - ALL RIGHTS RESERVED.</h6>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    </html>
