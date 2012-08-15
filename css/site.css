@@ -32,7 +32,7 @@ ul, ol, li {
     border-bottom: 1px solid lightgrey;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 90px;
+    padding-bottom: 115px;
 }
 
 #team-icons {
@@ -84,13 +84,26 @@ a.person:hover .small-bio:after {
   left:1em;
 }
 
+#asq-force-pic {
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 796px;
+    background-image: img/asq_force.jpg;
+
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
 
 .small-bio {
     display: none;
 }
 
-.pane p {
+.pane p,li{
     padding-top: 10px;
+    font-size: 17px;
 }
 
 .pane {
@@ -98,6 +111,11 @@ a.person:hover .small-bio:after {
     margin-right: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.container hr {
+    margin: 18px 100px;
+    border-top: 1px solid lightGrey;
 }
 
 .member img {
@@ -139,12 +157,12 @@ a.person:hover .small-bio:after {
     padding-bottom: 100px;
 }
 #footer-pane {
-    height: 360px;
     width: 100%;
     background-color: #012345;
 }
 #footer {
     padding-top: 50px;
+    padding-left: 10px;
 }
 #footer h3 {
     color: #FF8700;

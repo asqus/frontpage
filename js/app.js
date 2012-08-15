@@ -12,6 +12,16 @@ window.FaqView = Backbone.View.extend({
     
     template:_.template($('#faq').html()),
 
+    events: {
+        "click .faq-link": "faq_click"
+    },
+
+    faq_click: function(e){
+        e.preventDefault();
+        window.history.pushState()
+        $(window).scrollTop($(e.currentTarget.hash).offset().top-50);
+    },
+
     render:function (e) {
         $(this.el).html(this.template());
         return this;
@@ -23,15 +33,13 @@ window.TeamView = Backbone.View.extend({
     template:_.template($('#team').html()),
     
     events: {
-        "click .person": "team_member"
+        "click .person": "team_click"
     },
 
-    team_member: function(e){
-        console.log("chyea");
-        console.log(e.currentTarget.hash);
+    team_click: function(e){
         e.preventDefault();
         window.history.pushState()
-        $(window).scrollTop($(e.currentTarget.hash).offset().top);
+        $(window).scrollTop($(e.currentTarget.hash).offset().top-50);
     },
     
     render:function (e) {
@@ -43,7 +51,17 @@ window.TeamView = Backbone.View.extend({
 window.VisionView = Backbone.View.extend({
 
     template:_.template($('#vision').html()),
-    
+ 
+    events: {
+        "click .vision-link": "vis_click"
+    },
+
+    vis_click: function(e){
+        e.preventDefault();
+        window.history.pushState()
+        $(window).scrollTop($(e.currentTarget.hash).offset().top-50);
+    },
+   
     render:function (e) {
         $(this.el).html(this.template());
         return this;
