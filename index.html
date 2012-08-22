@@ -20,6 +20,9 @@
     <script type="text/javascript" src="js/backbone.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="js/bootstrap-scrollspy.js"></script>
+    <script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
 
     <!-- View Templates -->
 
@@ -40,16 +43,9 @@
         <div class="speech_bubble hl_temp from_right bubble_fade" style="left:270px; top:210px"></div>
     </div>
   </div>
-
   <div class="introTitle">
-    <h1>Let your voice</h1>
-    <h1>be heard.</h1>
-    <h2>Connect with your elected officials</h2>
-    <h2>like never before.</h2>
-    <br>
-    <a href="#signup">
-    <img src="img/link_to_email.png"  />
-    </a>
+    <h1>Representation, made simple.</h1>
+    <h2>Connecting <a href="#">you</a> and your <a href="#">elected officials</a></h2>
     <div onclick="location.href='#signup';" style="cursor:pointer; visibility:hidden;" class="input-append sendToEmail">
         <input size="16" type="text" disabled="disabled">
         <button class="btn btn-success" type="button">Join!</button>
@@ -62,16 +58,25 @@
 
 <div class="container" id="main">
 <div class="row span12">
-    <!-- 
     <div class="row">
-        <div id="front-nav">
-            <h1><a href="#ask">Question</a></h1>
-            <h1><a href="#answer">Respond</a></h1>
-            <h1><a href="#community">Discover</a></h1>
+        <div class="intro_text">
+            <h1>Dialogue for a modern democracy.</h1> 
+        </div>
+        <div class="subnav-container">
+        <div id="subbar" class="subnav navbar-fixed-top">
+            <ul class="nav nav-pills">
+                <li><a class="home-link" href="#content" style="display: none">Home</a></li>
+                <li><a class="home-link" href="#answer">Be Heard</a></li>
+                <li><a class="home-link" href="#ask">Get Answers</a></li>
+                <li><a class="home-link" href="#community">Discover Issues</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="intro_text">
+            <p>Asq.Us - A town hall for the 21st century.</p>
         </div>
     </div>
     <hr>
-    -->
     <div class="row">
         <div class="front_pane" id="answer">
             <div class="answerQuestion">
@@ -486,11 +491,44 @@ We anticipate maintaining the platform with a small amount of full-time employee
     <script type="text/javascript" src="js/app.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".subnav" data-offset="100">
     <script type="text/javascript">
         $(document).ready(function() { 
-            $('.dropdown-toggle').dropdown()
-            console.log("success")
+            $('.dropdown-toggle').dropdown();
+            console.log("success");
+
+/*
+    var $win = $(window);
+    var $nav = $('.subnav');
+    var navTop = $('.subnav').length && $('.subnav').offset().top - 38;
+    var isFixed = 0;
+
+    processScroll();
+
+    $win.on('scroll', processScroll);
+
+    function processScroll() {
+        console.log('test');
+        var i, scrollTop = $win.scrollTop();
+        if (scrollTop >= navTop && !isFixed) {
+            isFixed = 1;
+            $nav.addClass('subnav-fixed');
+        } else if (scrollTop <= navTop && isFixed) {
+            isFixed = 0;
+            $nav.removeClass('subnav-fixed');
+        }
+        $('[data-spy="scroll"]').each(function () {
+            var $spy = $(this).scrollspy('refresh')
+        });
+    };
+
+    console.log("scrollspy on");
+    if($('#subbar')){
+        $('#subbar').scrollspy();
+    }
+    console.log("scrollspy init");
+*/
+   
         });
     </script>
 
@@ -503,15 +541,15 @@ We anticipate maintaining the platform with a small amount of full-time employee
                 <span class="icon-bar"></span> 
                 <span class="icon-bar"></span> 
             </a>
-            <a class="brand" href="#"><img src="img/logo.png"></img></a>
+            <a class="brand" href="#"><img id="header_logo" src="img/logo.png"></img></a>
             <ul class="nav pull-left">
-                <p class="navbar-text">Modernizing Democracy</p>
+                <li><a href="#">Modernizing Democracy</a></li>
             </ul>
             <div class="nav-collapse">
                 <ul class="nav pull-right">
                     <li><a href="#">Home</a></li>
                     <li class="dropdown">
-                        <a href="#"
+                        <a href="#about"
                             class="dropdown-toggle"
                             data-toggle="dropdown">About<b class="caret"></b></a>
                         <ul class="dropdown-menu">

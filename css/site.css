@@ -2,6 +2,69 @@
 *  Asq.Us version 1.0
 */
 
+.intro_text {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  padding-top: 15px;
+  font-size: 24px;
+  line-height: 100px;
+}
+
+.intro_text h1{
+  line-height: 100px;
+}
+
+.intro_block {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.nav-pills li {
+    font-size: 30px;
+}
+
+.subnav-container {
+    padding-bottom:0px;
+}
+.subnav {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+
+background: rgb(255,255,255);
+    border-color: #D5D5D5;
+    -webkit-box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
+    box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-right: 7px;
+
+}
+
+.subnav-fixed {
+    /*important part*/
+    left: 50%;
+    margin-left: -283px;
+    position: fixed;
+
+    top: 48px;
+    z-index: 1020;
+    /*design stuff*/
+    background: rgb(255,255,255);
+    border-color: #D5D5D5;
+    -webkit-box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
+    box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-right: 7px;
+}
+
+.subnav-fixed ul {
+    margin-bottom: 5px;
+}
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -12,15 +75,16 @@ body {
 
     padding-top: 48px;
 
-    /* Background Gradient */
-    background: -moz-linear-gradient(top,  rgba(192,232,246,0) 0%, rgba(192,232,246,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(192,232,246,0)), color-stop(100%,rgba(192,232,246,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(192,232,246,0) 0%,rgba(192,232,246,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(192,232,246,0) 0%,rgba(192,232,246,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(192,232,246,0) 0%,rgba(192,232,246,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(192,232,246,0) 0%,rgba(192,232,246,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0e8f6', endColorstr='#c0e8f6',GradientType=0 ); /* IE6-9 */
-
+    /* Background Gradient 
+    background: -moz-linear-gradient(top,  rgba(192,232,246,0) 0%, rgba(192,232,246,1) 100%); /* FF3.6+ 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(192,232,246,0)), color-stop(100%,rgba(192,232,246,1))); /* Chrome,Safari4+
+    background: -webkit-linear-gradient(top,  rgba(192,232,246,0) 0%,rgba(192,232,246,1) 100%); /* Chrome10+,Safari5.1+ 
+    background: -o-linear-gradient(top,  rgba(192,232,246,0) 0%,rgba(192,232,246,1) 100%); /* Opera 11.10+ 
+    background: -ms-linear-gradient(top,  rgba(192,232,246,0) 0%,rgba(192,232,246,1) 100%); /* IE10+ 
+    background: linear-gradient(to bottom,  rgba(192,232,246,0) 0%,rgba(192,232,246,1) 100%); /* W3C 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0e8f6', endColorstr='#c0e8f6',GradientType=0 ); /* IE6-9 
+*/
+    background: rgba(192,232,246,1);
 }
 
 #content {
@@ -108,8 +172,12 @@ a.person:hover .small-bio:after {
     display: none;
 }
 
-.pane p,li{
-    padding-top: 10px;
+.nav {
+    margin-bottom: 5px;
+}
+
+.nav p,li{
+    padding-top: 5px;
     font-size: 17px;
 }
 
@@ -156,9 +224,12 @@ a.person:hover .small-bio:after {
 }
 #main-pane {
     width: 100%;
+
+
 }
 /* 
 #main {
+
     -webkit-box-shadow: 2px 2px 20px 1px #010101;
     box-shadow: 2px 2px 20px 1px #010101;
     background-color: white;
@@ -191,20 +262,16 @@ a.person:hover .small-bio:after {
     font-weight: normal;
 }
 
-
-/* Front page stuff */
-#front-nav {
-    margin-left: auto;
-    margin-right: auto:
+.navbar .nav > li > a {
+    color: #fff;
 }
-#front-nav h1 {
-    float: left;
-    padding-left: 30px;
-    padding-right: 30px;
+.navbar .nav > li > a:hover {
+    color: #ff8700;
 }
 
 .navbar-inner {
-  background-color: #012345; /* background color will be black for all browsers */
+  background: rgb(1, 35, 69);
+  background: rgba(0, 0, 0, 0.8);
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
@@ -212,12 +279,13 @@ a.person:hover .small-bio:after {
 
 
 #headerIntro {
-  height: 360px;
-  background-image: url('../img/constitution_fade.png');
+  height: 400px;
+  /* background-image: url('../img/clouds-background.png'); */
+  /* background-image: url('../img/mt_rushmore.png');
+  background-image: url('../img/constitution_fade.png'); */
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  border-bottom: solid #FFFFFF 2px;
 }
 
 .askQuestion{
@@ -342,10 +410,11 @@ a.person:hover .small-bio:after {
 #main {
   z-index: 10;
   position: relative;
-  background-image: url("../img/natural_paper.png");
+  //background-image: url("../img/natural_paper.png");
+  background: white;
   //Shadow
-  -webkit-box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
-  box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
+  //-webkit-box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
+  //box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
   //Corners
   -webkit-border-radius: 10px 10px 10px 10px;
   border-radius: 10px 10px 10px 10px;
@@ -375,16 +444,10 @@ a.person:hover .small-bio:after {
   position: absolute;
   float: right;
   margin-top: 40px;
-  margin-left: 500px;
-  text-shadow: 0 0 1em #FFF, 0 0 1em #FFF, 0 0 1em #FFF;
+  margin-left: 60px;
 }
 
   .introTitle h1 {
-    text-shadow:
-      0 0 1em #FFF,
-      0 0 1em #FFF,
-      0 0 1em #FFF,
-      0 0 1em #FFF;
     font-size: 60px;
     line-height: 66px;
   }
@@ -396,13 +459,14 @@ a.person:hover .small-bio:after {
 
 #tablet {
   width: 450px;
-  height: 576px;
+  /*height: 576px;*/
   position: fixed;
-  top: 100px;
-  background: url("../img/ipad.png") 0 0 no-repeat;
+  top: -100px;
+  background: url("../img/statue-of-liberty-small.png") 0 0 no-repeat;
 }
 
 .speech_bubble {
+  visibility: hidden;
   position: absolute;
   top: 0; left: 0;
   background-image: url(../img/speech_bubble_sprite_small.png);

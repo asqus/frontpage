@@ -3,15 +3,23 @@ window.HomeView = Backbone.View.extend({
     template:_.template($('#home').html()),
 
     events: {
-        "hover #introOverlay" : "hideBubbles"
+        "hover #introOverlay"   : "hideBubbles",
+        "click .home-link"      : "home_click"
     },
 
     hideBubbles: function() {
         $(".bubble_fade").fadeToggle(600);
     },
 
+    home_click: function(e){
+        e.preventDefault();
+        window.history.pushState()
+        $(window).scrollTop($(e.currentTarget.hash).offset().top-150);
+    },
+
     render:function (e) {
         $(this.el).html(this.template());
+        $('body').scrollTop(0);
         return this;
     }
 });
@@ -32,6 +40,7 @@ window.FaqView = Backbone.View.extend({
 
     render:function (e) {
         $(this.el).html(this.template());
+        $('body').scrollTop(0);
         return this;
     }
 });
@@ -52,6 +61,7 @@ window.TeamView = Backbone.View.extend({
     
     render:function (e) {
         $(this.el).html(this.template());
+        $('body').scrollTop(0);
         return this;
     }
 });
@@ -72,6 +82,7 @@ window.VisionView = Backbone.View.extend({
    
     render:function (e) {
         $(this.el).html(this.template());
+        $('body').scrollTop(0);
         return this;
     }
 });
@@ -82,6 +93,7 @@ window.PrinciplesView = Backbone.View.extend({
     
     render:function (e) {
         $(this.el).html(this.template());
+        $('body').scrollTop(0);
         return this;
     }
 });
@@ -92,9 +104,42 @@ window.ContactView = Backbone.View.extend({
     
     render:function (e) {
         $(this.el).html(this.template());
+        $('body').scrollTop(0);
         return this;
     }
 });
+
+
+function homeSwitch() { 
+
+    var $win = $(window);
+    var $nav = $('.subnav');
+    var navTop = $('.subnav').length && $('.subnav').offset().top - 38;
+    var isFixed = 0;
+
+    processScroll();
+
+    $win.on('scroll', processScroll);
+
+    function processScroll() {
+        console.log('test');
+        var i, scrollTop = $win.scrollTop();
+        if (scrollTop >= navTop && !isFixed) {
+            isFixed = 1;
+            $nav.addClass('subnav-fixed');
+        } else if (scrollTop <= navTop && isFixed) {
+            isFixed = 0;
+            $nav.removeClass('subnav-fixed');
+        }
+        $('[data-spy="scroll"]').each(function () {
+            var $spy = $(this).scrollspy('refresh')
+        });
+    };
+
+    console.log("scrollspy on");
+    $().scrollspy();
+    console.log("scrollspy init");
+};
 
 var AppRouter = Backbone.Router.extend({
 
@@ -104,7 +149,8 @@ var AppRouter = Backbone.Router.extend({
         "team"          : "team",
         "vision"        : "vision",
         "principles"    : "principles",
-        "contact"       : "contact"
+        "contact"       : "contact",
+        ".*"             : "home"
     },
 
     initialize:function () {
@@ -119,6 +165,7 @@ var AppRouter = Backbone.Router.extend({
         console.log("home");
         var view = new HomeView();
         $("#content").html(view.render().el);
+        homeSwitch();
     },
 
 
