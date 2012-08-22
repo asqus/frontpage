@@ -30,38 +30,22 @@
     <script type="text/template" id="home">
 
 <div id="headerIntro">
-<div class="container">
-<div class="row" id="introPane">
 
 <div class="intro_container">
-  <div id="introOverlay">
-    <div  id="tablet">
-        <div class="speech_bubble hl_temp from_right" style="left:200px; top:140px"></div>
-        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:100px; top:100px"></div>
-        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:140px; top:160px"></div>
-        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:305px; top:80px"></div>
-        <div class="speech_bubble hl_temp from_right bubble_fade" style="left:270px; top:210px"></div>
-    </div>
-  </div>
   <div class="introTitle">
     <h1>Representation, made simple.</h1>
     <h2>Connecting <a href="#">you</a> and your <a href="#">elected officials</a></h2>
-    <div onclick="location.href='#signup';" style="cursor:pointer; visibility:hidden;" class="input-append sendToEmail">
-        <input size="16" type="text" disabled="disabled">
-        <button class="btn btn-success" type="button">Join!</button>
+  </div>
+  <div id="introOverlay">
+    <div  id="tablet">
     </div>
   </div>
-</div>
-</div>
 </div>
 </div>
 
 <div class="container" id="main">
 <div class="row span12">
     <div class="row">
-        <div class="intro_text">
-            <h1>Dialogue for a modern democracy.</h1> 
-        </div>
         <div class="subnav-container">
         <div id="subbar" class="subnav navbar-fixed-top">
             <ul class="nav nav-pills">
@@ -73,18 +57,20 @@
         </div>
         </div>
         <div class="intro_text">
+            <h1>Dialogue for a modern democracy.</h1> 
+        </div>
+        <div class="intro_text">
             <p>Asq.Us - A town hall for the 21st century.</p>
         </div>
     </div>
     <hr>
     <div class="row">
         <div class="front_pane" id="answer">
-            <div class="answerQuestion">
-              <div class="fb-quiz">
-              </div>
-              <div class="rightText">
-                <h1>Answer questions directly from your representatives and have your voice heard.</h1>
-              </div>
+            <div class="span4">
+            </div>
+            <div class="span4 offset4">
+            </div>
+            <div class="span4 offset8">
             </div>
         </div>
     </div>
@@ -491,7 +477,7 @@ We anticipate maintaining the platform with a small amount of full-time employee
     <script type="text/javascript" src="js/app.js"></script>
 
 </head>
-<body data-spy="scroll" data-target=".subnav" data-offset="100">
+<body data-spy="scroll" data-target=".subnav" data-offset="-100">
     <script type="text/javascript">
         $(document).ready(function() { 
             $('.dropdown-toggle').dropdown();
