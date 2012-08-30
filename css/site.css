@@ -2,13 +2,34 @@
 *  Asq.Us version 1.0
 */
 
+.pane_heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-left: 80px;
+  color: #012345;
+}
+.pane_subheading {
+  font-style: italic;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 50px;
+  margin-left: 80px;
+  color: #012345;
+}
+
 .intro_text {
   position: relative;
   display: table;
   margin: 0 auto;
   padding-top: 15px;
   font-size: 24px;
-  line-height: 100px;
+  line-height: 30px;
+  margin-left: 80px;
+  margin-right: 110px;
+  color: #012345;
+  text-align: center;
 }
 
 .intro_text h1{
@@ -21,15 +42,19 @@
 }
 
 .nav-pills li {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
 }
-.nav-pills > .active > a, .nav-pills > .active > a:hover {
+.nav-pills a {
     color: #012345;
+}
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    color: #FF8700;
     background-color: white;
 }
-.nav-pills > a:hover {
-    color: #012345;
+.nav-pills > li > a:hover {
+    color: white;
+    background-color: #012345;
 }
 .subnav-container {
     padding-bottom:0px;
@@ -48,14 +73,14 @@ background: rgb(255,255,255);
     padding-left: 10px;
     padding-right: 7px;
 
-    border: 5px solid #93ccea;
+    border: 4px solid #93ccea;
     top: -30px;
 }
 
 .subnav-fixed {
     /*important part*/
     left: 50%;
-    margin-left: -358px;
+    margin-left: -302px;
     position: fixed;
 
     top: 48px;
@@ -94,7 +119,7 @@ font-family: Trebuchet MS;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c0e8f6', endColorstr='#c0e8f6',GradientType=0 ); /* IE6-9 
 */
     background: rgba(234,250,255,1);
-    background: #93ccea;
+    /*background: #93ccea;i*/
 }
 
 #content {
@@ -195,6 +220,57 @@ a.person:hover .small-bio:after {
     font-size: 17px;
 }
 
+.numberTag{
+    background: #93CCEA;
+    color: white;
+    border-radius: 25px 25px 25px 25px;
+    border: 3px solid #93CCEA;
+    padding: 10px 20px 10px 10px;
+    margin-left: 45px;
+    width: 10px;
+    height: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    top: -18px;
+    left: -18px;
+    position: absolute;
+    line-height: 20px; 
+
+
+}
+
+.panelSplit {
+    width: 723px;
+    height: 1px;
+    background: rgba(234,250,255,0.8);
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 7px;
+    border-bottom: 1px solid lightgray;
+}
+
+.square {
+    border-radius: 20px 20px 20px 20px;
+    border: 5px solid #93CCEA;
+    padding: 10px;
+    margin-left: 45px;
+}
+
+.boxes {
+    font-size: 20px;
+    line-height: 25px;
+    position: relative;
+    
+}
+.boxes p{
+    margin-left: 45px;
+    color: #012345;
+    font-weight: bold;
+}
+
+
 .pane {
     margin-left: 100px;
     margin-right: 100px;
@@ -204,7 +280,7 @@ a.person:hover .small-bio:after {
 
 .container hr {
     margin: 18px 100px;
-    border-top: 1px solid black;
+    border-top: 1px solid #D1D1D1;
 }
 
 .member img {
@@ -262,7 +338,7 @@ a.person:hover .small-bio:after {
     padding-left: 10px;
 }
 #footer h3 {
-    color: #FF8700;
+    color: white;
     font-size: 18px;
     line-height: 35px;
     font-weight: normal;
@@ -270,6 +346,9 @@ a.person:hover .small-bio:after {
 #footer li {
     line-height: 26px;
     font-size:  17px;
+}
+#footer a:hover {
+    color: white;
 }
 #footer h6 {
     padding-top: 25px;
@@ -284,7 +363,8 @@ a.person:hover .small-bio:after {
 }
 
 .navbar-inner {
-  background: rgba(1, 23, 46, 0.85); 
+  //background: rgba(1, 23, 46, 0.85); 
+  background-color: #012345;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
@@ -292,14 +372,28 @@ a.person:hover .small-bio:after {
 
 
 #headerIntro {
-  height: 490px;
+  height: 520px;
   /* background-image: url('../img/clouds-background.png'); */
   /* background-image: url('../img/mt_rushmore.png');
   background-image: url('../img/constitution_fade.png'); */
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
-  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding-top: 10px;
+
+background: rgb(234,250,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(234,250,255,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(234,250,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(234,250,255,1)), color-stop(10%,rgba(255,255,255,1)), color-stop(90%,rgba(255,255,255,1)), color-stop(100%,rgba(234,250,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(234,250,255,1) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(234,250,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(234,250,255,1) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(234,250,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(234,250,255,1) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(234,250,255,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(234,250,255,1) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%,rgba(234,250,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eafaff', endColorstr='#eafaff',GradientType=1 ); /* IE6-9 */
+
+
 }
 
 .askQuestion{
@@ -324,12 +418,20 @@ a.person:hover .small-bio:after {
   margin: 45px 15px 6px;
 }
 
-.rightText{
-  position: relative;
-  width: 450px;
-  float: right;
-  margin: 15px 15px 6px;
+.bubbleUp{
+    margin-left: 45px;
+
 }
+.rightText{
+    position: relative;
+    font-size: 20px;
+    line-height: 25px;
+    position: relative;
+    margin-top: 150px;
+    color: #012345;
+    font-weight: bold;
+}
+
 
 .leftText h1{
 //  font-size: 50px;
@@ -435,7 +537,7 @@ a.person:hover .small-bio:after {
   min-height: 100%;
   padding-bottom: 100px;
   
-  border: 10px solid #93ccea;
+  border: 4px solid #93ccea;
   background: white;
 }
 
@@ -453,35 +555,48 @@ a.person:hover .small-bio:after {
   position: relative;
   display: table;
   margin: 0 auto;
-  width: 390px;
-  height: 288px;
-  padding-top: 20px; 
+  width: 508px;
+  height: 275px;
+  //padding-top: 20px; 
+  top: 155px; 
 }
 
 .introTitle {
   padding-top: 20px;
-  position: fixed;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.secondTitle {
+  padding-top: 100px;
   display: table;
   margin: 0 auto;
 
 }
-
   .introTitle h1 {
-    font-size: 60px;
+    font-size: 50px;
     line-height: 66px;
+    position: fixed;
+    width: 844px;
+    margin-left: -417px;
   }
 
-  .introTitle h1, .introTitle h2 {
+  .introTitle h1, .secondTitle h2 {
     color: #012345;
   }
-
+.secondTitle h2 {
+    width: 476px;
+    position: fixed;
+    margin-left: -240px;
+}
 
 #tablet {
-  width: 390px;
-  height: 288px;
+  width: 508px;
+  height: 255px;
   position: fixed;
-  background: url("../img/intro_slide_bg.png") 0 0 no-repeat;
-  top: 200px;
+  background: url("../img/header_chelsea.png") 0 0 no-repeat;
+  top: 155px;
 }
 
 .speech_bubble {
