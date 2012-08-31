@@ -28,12 +28,16 @@
   line-height: 30px;
   margin-left: 80px;
   margin-right: 110px;
+  padding-bottom: 40px;
   color: #012345;
   text-align: center;
 }
 
 .intro_text h1{
   line-height: 100px;
+}
+.intro_text h3{
+  font-size: 19px;
 }
 
 .intro_block {
@@ -46,11 +50,11 @@
     font-weight: bold;
 }
 .nav-pills a {
-    color: #012345;
+    color: white;
 }
 .nav-pills > .active > a, .nav-pills > .active > a:hover {
-    color: #FF8700;
-    background-color: white;
+    color: #012345;
+    background-color: #93ccea;
 }
 .nav-pills > li > a:hover {
     color: white;
@@ -64,8 +68,7 @@
   display: table;
   margin: 0 auto;
 
-background: rgb(255,255,255);
-    border-color: #D5D5D5;
+background: #93ccea;
     //-webkit-box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
     //box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
     -webkit-border-radius: 10px 10px 10px 10px;
@@ -73,26 +76,28 @@ background: rgb(255,255,255);
     padding-left: 10px;
     padding-right: 7px;
 
-    border: 4px solid #93ccea;
-    top: -30px;
+    top: -24px;
 }
 
 .subnav-fixed {
     /*important part*/
     left: 50%;
-    margin-left: -302px;
+    margin-left: -295px;
     position: fixed;
 
     top: 48px;
-    z-index: 1020;
+    z-index: 1040;
     /*design stuff*/
-    background: rgb(255,255,255);
-    -webkit-box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
-    box-shadow: 2px 2px 20px 1px rgba(1, 1, 1, 1);
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     padding-left: 10px;
     padding-right: 7px;
+    background: #93ccea;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 .subnav-fixed ul {
@@ -171,7 +176,7 @@ a.person:hover .small-bio {
   width: auto;
   height: auto;
   white-space: nowrap;
-  top: -75px;
+  top: -79px;
   background: rgba(0,0,0,.8);
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
@@ -189,7 +194,7 @@ a.person:hover .small-bio:after {
   height:0;
   width:0;
   position:absolute;
-  bottom: -16px;
+  bottom: -20px;
   left:1em;
 }
 
@@ -259,7 +264,7 @@ a.person:hover .small-bio:after {
 }
 
 .boxes {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 25px;
     position: relative;
     
@@ -339,7 +344,7 @@ a.person:hover .small-bio:after {
 }
 #footer h3 {
     color: white;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 35px;
     font-weight: normal;
 }
@@ -419,7 +424,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eafaff', end
 }
 
 .bubbleUp{
-    margin-left: 45px;
+    margin-left: 80px;
 
 }
 .rightText{
@@ -427,7 +432,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eafaff', end
     font-size: 20px;
     line-height: 25px;
     position: relative;
-    margin-top: 150px;
+    margin-top: 95px;
     color: #012345;
     font-weight: bold;
 }
@@ -471,7 +476,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eafaff', end
 .rightImage {
   position: relative;
   float: left;
-  height: 379px;
+  height: 266px;
   width: 306px;
   margin-top: 20px;
 }
@@ -566,8 +571,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eafaff', end
   display: table;
   margin: 0 auto;
   text-align: center;
-
 }
+
 .secondTitle {
   padding-top: 100px;
   display: table;
@@ -590,6 +595,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eafaff', end
     position: fixed;
     margin-left: -240px;
 }
+
+.closingTitle h1{
+    color: #012345;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 44px;
+    line-height: 66px;
+    padding-top: 20px;
+}
+
 
 #tablet {
   width: 508px;
