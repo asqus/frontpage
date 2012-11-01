@@ -122,7 +122,6 @@ function homeSwitch() {
     $win.on('scroll', processScroll);
 
     function processScroll() {
-        console.log('test');
         var i, scrollTop = $win.scrollTop();
         if (scrollTop >= navTop && !isFixed) {
             isFixed = 1;
@@ -136,9 +135,7 @@ function homeSwitch() {
         });
     };
 
-    console.log("scrollspy on");
     $().scrollspy();
-    console.log("scrollspy init");
 };
 
 var AppRouter = Backbone.Router.extend({
@@ -162,7 +159,6 @@ var AppRouter = Backbone.Router.extend({
     },
 
     home:function () {
-        console.log("home");
         var view = new HomeView();
         $("#content").html(view.render().el);
         homeSwitch();
@@ -170,13 +166,11 @@ var AppRouter = Backbone.Router.extend({
 
 
     faq:function () {
-        console.log("faq");
         var view = new FaqView();
         $("#content").html(view.render().el);
     },
 
     team:function () {
-        console.log("team");
         var view = new TeamView();
         $("#content").html(view.render().el);
     },
@@ -198,7 +192,6 @@ var AppRouter = Backbone.Router.extend({
 });
 
 $(document).ready(function () {
-    console.log("app router");
     app = new AppRouter();
     Backbone.history.start();
 });
